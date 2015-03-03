@@ -27,7 +27,9 @@ $fz18:.9rem;
 $fz20: 1rem;
 $fz22:1.1rem;
 $fz24:.1.2rem;
-$fz24:.1.3rem;
+$fz26:.1.3rem;
+$fz28:.1.4rem;
+$fz30:.1.5rem;
 
 html {
   font-size: 20px;
@@ -41,8 +43,8 @@ html {
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../../v10/img/fonts/fontawesome-webfont.eot?v=4.3.0');
-  src: url('../../v10/img/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../../v10/img/fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../../v10/img/fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../../v10/img/fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../../v10/img/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+  src: url('../../v10/img/fonts/icomoon.eot?v=4.3.0');
+  src: url('../../v10/img/fonts/icomoon.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../../v10/img/fonts/icomoon.woff2?v=4.3.0') format('woff2'), url('../../v10/img/fonts/icomoon.woff?v=4.3.0') format('woff'), url('../../v10/img/fonts/icomoon.ttf?v=4.3.0') format('truetype'), url('../../v10/img/fonts/icomoon.svg?v=4.3.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
