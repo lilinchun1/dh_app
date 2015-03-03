@@ -38,3 +38,11 @@ html {
     font-size: 40px;
   }
 }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../../v10/img/fonts/fontawesome-webfont.eot?v=4.3.0');
+  src: url('../../v10/img/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../../v10/img/fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../../v10/img/fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../../v10/img/fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../../v10/img/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
