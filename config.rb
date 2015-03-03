@@ -1,12 +1,12 @@
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
-http_path = "/"
-css_dir = "/css"
-sass_dir = "/sass"
-images_dir = "/img"
-javascripts_dir = "/js"
-font_dir = "/img/fonts"
+http_path = "v10/"
+css_dir = "v10/css"
+sass_dir = "v10/sass"
+images_dir = "v10/img"
+javascripts_dir = "v10/js"
+font_dir = "v10/img/fonts"
 
 # enable sourcemaps
 enable_sourcemaps = true

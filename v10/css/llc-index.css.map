@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AA+BA,IAAK,CACH,SAAS,CAAE,IAAI,CAGjB,oCAAoC,CAClC,IAAI,CACF,SAAS,CAAE,IAAI",
+"sources": ["../sass/_var.scss"],
+"names": [],
+"file": "llc-index.css"
+}
