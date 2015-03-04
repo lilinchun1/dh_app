@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../icomoon.eot?85ib5k');
-	src:url('../icomoon.eot?#iefix85ib5k') format('embedded-opentype'),
-		url('../icomoon.woff?85ib5k') format('woff'),
-		url('../icomoon.ttf?85ib5k') format('truetype'),
-		url('../icomoon.svg?85ib5k#icomoon') format('svg');
+	src:url('../icomoon.eot?mbhnac');
+	src:url('../icomoon.eot?#iefixmbhnac') format('embedded-opentype'),
+		url('../icomoon.woff?mbhnac') format('woff'),
+		url('../icomoon.ttf?mbhnac') format('truetype'),
+		url('../icomoon.svg?mbhnac#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -161,5 +161,13 @@
 
 .icon-iconfont-zizhutuiguang:before {
 	content: "\f622";
+}
+
+.icon-iconfont-right:before {
+	content: "\f623";
+}
+
+.icon-iconfont-evaluate:before {
+	content: "\f624";
 }
 

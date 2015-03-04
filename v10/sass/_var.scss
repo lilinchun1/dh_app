@@ -13,11 +13,11 @@ $border-color2:#dfdfdf;//虚线
 $font-color999:#999;
 $font-color666:#666;
 $font-color333:#333;
-$red:#e02d2a;
+$red:#da3c3c;
 $green:#3db73e;
 $orange:#ff9900;
 $blue:#2163bd;
-$yellow:#ffb400;
+$yellow:#fcf700;
 
 $fz10:.5rem;
 $fz12:.6rem;
@@ -26,11 +26,16 @@ $fz16:.8rem;
 $fz18:.9rem;
 $fz20: 1rem;
 $fz22:1.1rem;
-$fz24:.1.2rem;
-$fz26:.1.3rem;
-$fz28:.1.4rem;
-$fz30:.1.5rem;
+$fz24:1.2rem;
+$fz26:1.3rem;
+$fz28:1.4rem;
+$fz30:1.5rem;
+$fz32:1.6rem;
 
+*{
+  margin: 0;
+  padding: 0;
+}
 html {
   font-size: 20px;
 }
@@ -60,6 +65,7 @@ html {
   font-variant: normal;
   text-transform: none;
   line-height: 1;}
+
 .box-wrap{
   width: 16rem;
 }
@@ -78,7 +84,7 @@ html {
     text-align: center;
     display: block;
     z-index: 2;
-    font-size: .8rem;
+    font-size:1rem;
   }
   div{
     text-align: center;
@@ -89,6 +95,16 @@ html {
     font-size: .8rem;
 
 
+  }
+  span{
+    line-height: 2.2rem;
+    color: #fff;
+    float: left;
+    width:2rem;
+    text-align: center;
+    display: block;
+    z-index: 2;
+    font-size: .8rem;
   }
 }
 /*-----------------------灰色----------------------*/
@@ -104,7 +120,7 @@ html {
     text-align: center;
     display: block;
     z-index: 2;
-    font-size: .8rem;
+    font-size: 1rem;
   }
   div {
     text-align: center;
@@ -144,3 +160,17 @@ html {
   }
 }
 /*---------------------------------------------*/
+.head-the{
+  background-color: transparent;
+  overflow: hidden;
+  a{
+    line-height: 2.2rem;
+    color: #fff;
+    float: left;
+    width: 2rem;
+    text-align: center;
+    display: block;
+    z-index: 2;
+    font-size: 1rem;
+  }
+}

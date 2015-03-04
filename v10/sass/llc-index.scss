@@ -8,3 +8,201 @@
  */
 
 @import "var";
+
+.banner{
+  height: 6.5rem;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+.red-packet-item{
+  margin: 1.35rem auto 0 auto;
+  padding: .5rem 0;
+  width: 15rem;
+  background: $red;
+  color: #ffffff;
+  border-radius: .6rem;
+}
+.red-info-tt{
+  position: relative;
+  font-size: $fz16;
+  height: 2.35rem;
+  text-indent: 1.25rem;
+  &:before{
+    content: "\f600";
+    font-family: 'icomoon';
+    position: absolute;
+    top: -2.1rem;
+    left: .4rem;
+    font-size: 1.8rem;
+    color: $red;
+    text-indent: 1px;
+  }
+}
+.money{
+  position: absolute;
+  top: -1rem;
+  right: .5rem;
+  width: 2.8rem;
+  height: 1.8rem;
+  background: url(../../v10/img/money.png) 0 0 no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.egg{
+  width: 2.7rem;
+  height: 2.1rem;
+  background: url(../../v10/img/egg.png) 0 0 no-repeat;
+}
+.red-info-con{
+  position: relative;
+  &:before{
+    content: "\f600";
+    font-family: 'icomoon';
+    position: absolute;
+    top: -2.1rem;
+    right: .3rem;
+    font-size: 1.8rem;
+    color: $red;
+  }
+  article{
+    height: 10.4rem;
+    overflow-y: scroll;
+  }
+  h2{
+    margin: 0 1.25rem 0 2rem;
+    font-size: $fz14;
+    color: $yellow;
+    font-weight: normal;
+  }
+  p{
+    margin: 0 1.25rem 0 2.75rem;
+    font-size: $fz12;
+    color: #fff;
+  }
+  section{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: 1.4rem;
+      width: 10px;
+      height: 100%;
+      border-left: 1px dotted $yellow;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: 1.3rem;
+      width: .2rem;
+      height: .2rem;
+      border-radius: .2rem;
+      background: $yellow;
+    }
+  }
+}
+.red-btn{
+  position: relative;
+  display: block;
+  font-size: $fz14;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &:before{
+    content: "\f600";
+    font-family: 'icomoon';
+    position: absolute;
+    top: -1.6rem;
+    left: .4rem;
+    font-size: 1.8rem;
+    color: $red;
+  }
+}
+.red-packet-wrap{
+  padding-bottom: 1rem;
+  background: url(../../v10/img/bg.png) 50% 100% no-repeat;
+}
+.kuaike-wrap{
+  padding-bottom: 1rem;
+  background: $red url(../../v10/img/bg.png) 50% 100% no-repeat;
+  .red-packet-item{
+    background-color: #ffd842;
+    color: $red;
+  }
+  .red-info-con{
+    h2{
+      color: #c00101;
+    }
+    p{
+      color: #e33e38;
+    }
+    section{
+      position: relative;
+      &:before{
+        content: "";
+        border-left: 1px dotted #c00101;
+      }
+      &:after{
+        content: "";
+        background: #c00101;
+      }
+    }
+  }
+  .red-info-tt{
+    &:before{
+      display: none;
+    }
+  }
+  .red-info-con{
+    &:before{
+      left: .4rem;
+      color: #ffd842;
+    }
+  }
+  .red-btn{
+    &:before{
+      right: .5rem;
+      color: #ffd842;
+      text-align: right;
+    }
+  }
+}
+.kuaike-tt{
+  padding: 0;
+  height: 5rem;
+  overflow: hidden;
+}
+.kuaike-tt-left {
+  float: left;
+  margin-top: .75rem;
+  width: 10.3rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: $fz24;
+  color: #742b25;
+  text-indent: 3.5rem;
+  box-shadow: -1px 0 0 #ddae3c inset;
+  background: url(../../v10/img/kuaike.png) 1rem 50% no-repeat;
+  -webkit-background-size: 2.2rem auto;
+  background-size: 2.2rem auto;
+}
+.kuaike-tt-right{
+  float: left;
+  margin-top: .75rem;
+  width: 4.7rem;
+  height: 3.5rem;
+  box-shadow: 2px 0 0 #ffe686 inset;
+  p{
+    margin: 0;
+    width: 3.75rem;
+    text-align: right;
+    font-size: $fz12;
+    color: #742b25;
+    &:nth-of-type(1){
+      margin-top: 1rem;
+    }
+  }
+}

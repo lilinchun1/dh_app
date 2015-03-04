@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>快客</title>
+    <link rel="stylesheet" type="text/css" href="../v10/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../v10/css/amazeui.min.css">
+    <link rel="stylesheet" href="../v10/css/llc-index.css"/>
+</head>
+<body>
+<div class="box-wrap kuaike-wrap">
+    <div class="head-grey">
+        <a class="icon-">&#xf604;</a>
+        <div>快客</div>
+    </div>
+    <div class="red-packet-item kuaike-tt">
+        <div class="kuaike-tt-left">
+            快客会员卡
+        </div>
+        <div class="kuaike-tt-right">
+            <p>有效期至</p>
+            <p>2015-05-18</p>
+        </div>
+    </div>
+    <div class="red-packet-item red-info-con">
+        <article>
+            <section>
+                <h2>活动原则</h2>
+                <p>
+                    大华集团2004-2007连续荣膺中国房地产百强开发企业综合实力TOP10、中国房地产公司品牌价值TOP10。在其主要基地——上海市
+                </p>
+            </section>
+            <section>
+                <h2>活动说明</h2>
+                <p>
+                    大华集团2004-2007连续荣膺中国房地产百强开发企业综合实力TOP10、中国房地产公司品牌价值TOP10。在其主要基地——上海市，已开发建设商品房600多万平方米， 05
+                </p>
+            </section>
+        </article>
+    </div>
+    <button class="red-packet-item red-btn">
+        我要领取
+    </button>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<script type="text/javascript" src="../v10/js/api.js"></script>
+<script src="../v10/js/jquery.min.js"></script>
+<script src="../v10/js/amazeui.min.js"></script>
+<script src="../v10/js/global.js"></script>
+</html>

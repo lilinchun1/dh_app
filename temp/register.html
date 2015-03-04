@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../v10/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../v10/css/amazeui.min.css">
+    <link rel="stylesheet" href="../v10/css/cy-index.css"/>
+    <style>
+        body{
+            background: -webkit-linear-gradient(top, #ff492e, #ff2c66);
+            background: -moz-linear-gradient(top, #ff492e, #ff2c66);
+            background: -ms-linear-gradient(top, #ff492e, #ff2c66);
+            background: -o-linear-gradient(top, #ff492e, #ff2c66);
+            background: linear-gradient(top, #ff492e, #ff2c66) ;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box-wrap">
+    <div class="head-the">
+        <a class="icon-">&#xf604;</a>
+    </div>
+    <div class="reg_top">
+        注册
+    </div>
+    <div class="re_text">
+        <div class="ren_text">
+            <span>联系方式</span>
+            <input type="text" placeholder="请输入手机号" name="reg"/>
+            <button type="button" disabled="disabled">获取验证码</button>
+        </div>
+        <div>
+            <span>验证码</span>
+            <input type="text" placeholder="请输入验证码" name="reg"/>
+        </div>
+        <div>
+            <span>姓名</span>
+            <input type="text" placeholder="请输入真实姓名" name="reg"/>
+        </div>
+        <div>
+            <span>性别</span>
+            <div class="checkbox">
+                <p>
+                    <input type="radio" name="checkbox" />男
+                </p>
+                <p>
+                    <input type="radio" name="checkbox"/>女
+                </p>
+
+            </div>
+
+        </div>
+        <div>
+            <span>身份证号</span>
+            <input type="tel" placeholder="请输入身份证号" name="reg"/>
+        </div>
+        <div>
+            <span>设置密码</span>
+            <input type="password" placeholder="请输入登录密码" name="reg"/>
+        </div>
+        <div>
+            <span>确定密码</span>
+            <input type="password" placeholder="请重复输入登录密码" name="reg"/>
+        </div>
+        <div>
+            <i>*业主请填写以下信息</i>
+        </div>
+        <div>
+            <span>期数</span>
+            <div class="select">
+                <select name="select" id="">
+                    <option value="">请选择期数</option>
+                    <option value="">qqq</option>
+                </select>
+                <span class="icon-select">&#xf623;</span>
+            </div>
+        </div>
+        <div>
+            <span>楼号</span>
+            <div class="select">
+                <select name="select" id="">
+                    <option value="">请选择楼号</option>
+                    <option value="">qqq</option>
+                </select>
+                <span class="icon-select">&#xf623;</span>
+            </div>
+        </div>
+        <div>
+            <span>单元</span>
+            <div class="select">
+                <select name="select" id="">
+                    <option value="">请选择单元</option>
+                    <option value="">qqq</option>
+                </select>
+                <span class="icon-select">&#xf623;</span>
+            </div>
+        </div>
+        <a href="#" class="en_button reng_width">提交</a>
+    </div>
+
+</div>
+
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

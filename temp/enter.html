@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../v10/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../v10/css/amazeui.min.css">
+    <link rel="stylesheet" href="../v10/css/cy-index.css"/>
+    <style>
+        body{
+            background: -webkit-linear-gradient(top, #ff492e, #ff2c66);
+            background: -moz-linear-gradient(top, #ff492e, #ff2c66);
+            background: -ms-linear-gradient(top, #ff492e, #ff2c66);
+            background: -o-linear-gradient(top, #ff492e, #ff2c66);
+            filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff492e', endColorstr='#ff2c66', GradientType='0');
+            background: linear-gradient(top, #ff492e, #ff2c66);
+        }
+    </style>
+</head>
+<body>
+<div class="box-wrap">
+    <div class="en_logo">
+        <img src="../v10/img/logo.png" alt=""/>
+    </div>
+   <div class="en_text">
+       <div>
+           <span class="icon-enicon">&#xf613</span>
+           <input type="text" placeholder="请输入注册手机号"/>
+       </div>
+       <div>
+           <span class="icon-enicon">&#xf611</span>
+           <input type="text" placeholder="请输入密码"/>
+       </div>
+       <a href="#" class="en_button">登陆</a>
+       <a href="register.html" class="en_char_l">忘记密码</a>
+       <a href="register.html" class="en_char">注册新帐号</a>
+   </div>
+
+
+</div>
+
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

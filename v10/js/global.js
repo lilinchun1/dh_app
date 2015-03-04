@@ -64,18 +64,21 @@ var Loading;
 var Loaded;
 var notice;
 var alertNew;
+var lastNoticeTimeoutAnimate;
+var lastNoticeTimeoutRemove;
 
 $(function(){
-	Loading=parent.Loading || function (){ if(typeof($.AMUI) == "undefined") return; isLoading=true; if ($('.am-loading').length==0) $('body').append('<div class="am-dimmer am-active am-loading" style="display: block;"></div><div class="am-loading am-modal am-modal-loading am-modal-no-btn am-modal-active" tabindex="-1" id="my-loading" style="display: block; margin-top: -43px;"><div class="am-modal-dialog"><div class="am-modal-hd">正在载入...</div><div class="am-modal-bd"><span class="am-icon-spinner am-icon-spin"></span></div></div></div>'); else $('.am-loading').show();}
+	Loading=parent.Loading || function (){ if(typeof($.AMUI) == "undefined") return; isLoading=true; if ($('.am-loading').length==0) $('body').append('<div class="am-dimmer am-active am-loading" style="display: block;"></div><div class="am-loading am-modal am-modal-loading am-modal-no-btn am-modal-active" tabindex="-1" id="my-loading" style="display: block; margin-top: -3.5rem;width: 12rem;margin-left: -6rem;"><div class="am-modal-dialog" style="border-radius: 0.25rem;"><div class="am-modal-hd" style="font-size: 0.8rem;">正在载入...</div><div class="am-modal-bd"><span class="am-icon-spinner am-icon-spin"></span></div></div></div>'); else $('.am-loading').show();}
+		
 	Loaded=parent.Loaded ||  function (){ if(typeof($.AMUI) == "undefined") return; $('.am-loading').hide()};
 	alertNew= parent.alertNew || function (content, title, btncallback){
 		Loaded();
 		if ($('#my-alert').length==0)
-			$('body').append('<div style="display: table; width: 100%; height: 100%; position: fixed; top: 0px; z-index: 9999; vertical-align: middle; padding: 10%;"><div class="am-modal am-modal-alert am-modal-active" tabindex="-1" id="my-alert" style=" display: table-cell;top: 0px;position: static;vertical-align: middle;"><div class="am-modal-dialog" style="border-radius: 10px; overflow: hidden;"><div class="am-modal-hd" id="alert-title" style="background-color: #eee; border-bottom: 1px solid #DDD;padding: 10px;text-align: center;">请注意</div><div class="am-modal-bd" id="alert-content" style="word-break:break-all; padding: 15px 10px; max-height:50vh; overflow-y:auto;">1</div><div class="am-modal-footer" id="my-alert-btns" style="background-color: #eee;"><span class="am-modal-btn" btnfn="确定">确定</span></div></div></div></div>');
+			$('body').append('<div style="display: table; width: 100%; height: 100%; position: fixed; top: 0px; z-index: 9999; vertical-align: middle; padding: 10%;"><div class="am-modal am-modal-alert am-modal-active" tabindex="-1" id="my-alert" style="display: table-cell; top: 0px; position: static; vertical-align: middle; "><div class="am-modal-dialog" style="border-radius: 0.5rem; overflow: hidden;"><div class="am-modal-hd" id="alert-title" style="background-color: #eee; border-bottom: 0.05rem solid #DDD;padding: 0.2rem;text-align: center;font-size: 0.8rem;">请注意</div><div class="am-modal-bd" id="alert-content" style="word-break:break-all; padding: 0.5rem 0.1rem; max-height: 10rem; overflow-y:auto;font-size: 0.6rem;font-weight: normal;">1</div><div class="am-modal-footer" id="my-alert-btns" style="background-color: #eee;"><span class="am-modal-btn" btnfn="确定" style="font-size: 0.6rem; padding: 0.1rem;">确定</span></div></div></div></div>');
 		$('#my-alert-btns').children().remove();
 		btncallback = btncallback || {'确定':function(){}};
 		for (var p in btncallback){
-			var btn=$('<span class="am-modal-btn">' + p + '</span>').appendTo('#my-alert-btns');
+			var btn=$('<span class="am-modal-btn" style="font-size: 0.6rem; padding: 0.1rem;">' + p + '</span>').appendTo('#my-alert-btns');
 			btn.attr('btnfn',p);
 			btn.one('click',function(){
 				var p = $(this).attr('btnfn');
@@ -92,12 +95,25 @@ $(function(){
 	alert=alertNew;
 	
 	notice=function(text){
-		if (!text) return; text=text.toString();
-		var noticediv=$('<div style="position: fixed;  top: 80%; width: 100%;text-align: center; opacity: 0; z-index:10000;"><span style="background: rgba(0,0,0,0.6); padding: 5px 10px; border-radius: 5px; color: #fff;">' + text + '</span></div>').appendTo('body');
-		noticediv.animate({opacity: 1},100);
-		setTimeout(function(){noticediv.animate({opacity: 0},600);},600 + text.length*100);
-		setTimeout(function(){noticediv.remove();},text.length*100 + 1000);
+		if (lastNoticeTimeoutAnimate) clearTimeout(lastNoticeTimeoutAnimate);
+		if (lastNoticeTimeoutRemove) clearTimeout(lastNoticeTimeoutRemove);
+		$('.ajax-notice').remove();
+
+		if (text){
+			text=text.toString();
+			$('<div class="ajax-notice" style="position: fixed; bottom: 10%; width: 100%;text-align: center; opacity: 0; z-index:10000;"><span style="background: rgba(0,0,0,0.6); padding: 0.25rem 0.5rem; border-radius: 0.25rem; color: #fff; font-size:0.6rem">' + text + '</span></div>').appendTo('body').animate({opacity: 1},100);;
+			lastNoticeTimeoutAnimate= setTimeout(function(){
+				var noticediv=$('.ajax-notice');
+				if (noticediv.length>0){
+					noticediv.animate({opacity: 0},600);
+					lastNoticeTimeoutRemove = setTimeout(function(){
+						$('.ajax-notice').remove();
+					},600);
+				}
+			},600 + text.length*100);
+		}
 	};
+	
 	var documentLoading=true;
 	$(document).on('ajaxStart', function(e, xhr, options) {
 		documentLoading=true;
