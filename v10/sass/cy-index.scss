@@ -6,4 +6,89 @@
  * To change this template use File | Settings | File Templates. 
  */
 @import "var";
+ul{
+  margin: 0;
+  padding: 0;
+}
 
+.am-tabs-default .am-tabs-nav{
+  overflow: hidden;
+
+  .ac_tabs{
+    width: 50%;
+    float: left;
+    background-color: #FFF;
+    border: #da3c3c solid .1rem;
+    border-top-left-radius: .4rem;
+    -o-border-top-left-radius: .4rem;
+    -moz-border-top-left-radius: .4rem;
+    -webkit-border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+    -o-border-bottom-left-radius: .4rem;
+    -moz-border-bottom-left-radius: .4rem;
+    -webkit-border-bottom-left-radius: .4rem;
+    line-height: 1.55rem;
+    height: 1.55rem;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    a{
+      background-color: transparent;
+      color: #da3c3c;
+      display: block;
+      font-size: .6rem;
+      line-height: 1.35rem;
+      text-align: center;
+
+    }
+  }
+  .ac_tabs_r{
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 50%;
+    float: right;
+    border: #da3c3c solid .1rem;
+    background-color: #fff;
+    border-top-right-radius: .4rem;
+    -o-border-top-right-radius: .4rem;
+    -moz-border-top-right-radius: .4rem;
+    -webkit-border-top-right-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+    -o-border-bottom-right-radius: .4rem;
+    -moz-border-bottom-right-radius: .4rem;
+    -webkit-border-bottom-right-radius: .4rem;
+    line-height: 1.55rem;
+    height: 1.55rem;
+    a{
+      background-color: transparent;
+      color: #da3c3c;
+      display: block;
+      font-size: .6rem;
+      line-height: 1.35rem;
+      text-align: center;
+
+    }
+
+  }
+
+}
+.am-tabs-default .am-tabs-nav .am-active{
+  background-color: #da3c3c;
+  a{
+    color: #FFF;
+  }
+}
+
+.am-tabs-bd{
+  border:none;
+  img{
+    margin: .6rem 0 0 0;
+    width: 100%;
+  }
+}
+.am-tabs-bd .am-tab-panel{
+  padding: 0;
+}
