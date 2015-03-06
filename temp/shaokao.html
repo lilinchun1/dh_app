@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>海边烧烤</title>
+    <link rel="stylesheet" type="text/css" href="../v10/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../v10/css/amazeui.min.css">
+    <link rel="stylesheet" href="../v10/css/llc-index.css"/>
+</head>
+<body>
+<div class="box-wrap shaokao-wrap">
+    <div class="head">
+        <a class="icon-">&#xf604;</a>
+        <div>海边烧烤</div>
+        <span>发起</span>
+    </div>
+    <div class="active-banner">
+        <img src="../v10/img/activity/activity_0.jpg" alt=""/>
+        <h1>
+            活动一 海边烧烤
+        </h1>
+        <h2>
+            大家一起嗨起来！
+        </h2>
+        <address>
+            <time>
+                2015.08.04 &nbsp;&nbsp;&nbsp;&nbsp;7天
+            </time>
+            <p>
+                大连金石滩国家地址公园
+            </p>
+        </address>
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<script type="text/javascript" src="../v10/js/api.js"></script>
+<script src="../v10/js/jquery.min.js"></script>
+<script src="../v10/js/amazeui.min.js"></script>
+<script src="../v10/js/global.js"></script>
+</html>

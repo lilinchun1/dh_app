@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>试水通知</title>
+    <link rel="stylesheet" type="text/css" href="../v10/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../v10/css/amazeui.min.css">
+    <link rel="stylesheet" href="../v10/css/llc-index.css"/>
+</head>
+<body>
+<div class="box-wrap message-wrap">
+    <div class="head">
+        <a class="icon-">&#xf604;</a>
+        <div>试水通知</div>
+    </div>
+    <div class="red-packet-item red-info-tt">
+        5月02日试水通知5月02日试水通知5月02日试水通知5月02日试水通知5月02日试水通知5月02日试水通知
+    </div>
+    <div class="red-packet-item red-info-con">
+        <article>
+            <section>
+                <h2>尊敬的业主您好  </h2>
+                <p>
+                    由于严冬将至，现定于2015年5月02日下午3点进行上压实水，请您跟您的家人留意，并在家中留人，谢谢配合。
+                </p>
+            </section>
+        </article>
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<script type="text/javascript" src="../v10/js/api.js"></script>
+<script src="../v10/js/jquery.min.js"></script>
+<script src="../v10/js/amazeui.min.js"></script>
+<script src="../v10/js/global.js"></script>
+</html>

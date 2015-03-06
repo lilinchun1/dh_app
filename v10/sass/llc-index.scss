@@ -237,3 +237,97 @@
   top: 21.4rem;
   left: 7rem;
 }
+
+.active-banner{
+  position: relative;
+  margin: .4rem auto 0 auto;
+  width: 15rem;
+  height: 8.25rem;
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: -1.75rem;
+    left: .7rem;
+    width: 1.85rem;
+    height: 1.75rem;
+    background: url(../../v10/img/banner-foot.png) 0 0 no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    border-radius: .8rem;
+  }
+  h1,h2{
+    margin: 0;
+    position: absolute;
+    left: .7rem;
+    font-weight: normal;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #1e325b;
+  }
+  h1{
+    top: .55rem;
+    font-size: $fz24;
+  }
+  h2{
+    top: 2rem;
+    font-size: $fz20;
+  }
+  address{
+    margin: 0;
+    position: absolute;
+    top: 3.95rem;
+    left: .7rem;
+    line-height: .8rem;
+    &:before{
+      position: absolute;
+      top: .5rem;
+      left: 0;
+      content: "";
+      width: .25rem;
+      height: 1.45rem;
+      background-color: #fff000;
+    }
+  }
+  time,
+  p{
+    margin: 0;
+    text-indent: .75rem;
+    color: #ffffff;
+    font-size: $fz12;
+    text-shadow: 1px 1px 2px #1e325b;
+  }
+}
+.message-wrap{
+  padding-bottom: 1rem;
+  background: url(../../v10/img/bg.png) 50% 100% no-repeat;
+  background-size: 100% auto;
+  .red-info-tt{
+    &:before{
+      display: none;
+    }
+  }
+  .red-info-con{
+    &:before{
+      left: .4rem;
+    }
+    article{
+      height: auto;
+    }
+    section{
+      &:before,
+      &:after{
+        display: none;
+      }
+      h2,
+      p{
+        margin-left: 1.25rem;
+      }
+      p{
+        text-indent: 2em;
+      }
+    }
+  }
+}
