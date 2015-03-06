@@ -8,7 +8,7 @@
  */
 
 @import "var";
-
+/*-----------------------red-packet.html start----------------------*/
 .banner{
   height: 6.5rem;
   overflow: hidden;
@@ -18,7 +18,7 @@
 }
 .red-packet-item{
   margin: 1.35rem auto 0 auto;
-  padding: .5rem 0;
+  padding: .7rem 0;
   width: 15rem;
   background: $red;
   color: #ffffff;
@@ -28,7 +28,7 @@
   position: relative;
   font-size: $fz16;
   min-height: 2.35rem;
-  padding: 0 1.25rem;
+  padding: .7rem 1.25rem;
   &:before{
     content: "\f600";
     font-family: 'icomoon';
@@ -54,6 +54,8 @@
   width: 2.7rem;
   height: 2.1rem;
   background: url(../../v10/img/egg.png) 0 0 no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
 }
 .red-info-con{
   position: relative;
@@ -121,12 +123,14 @@
     color: $red;
   }
 }
-.red-packet-wrap{
-  padding-bottom: 1rem;
-  background: url(../../v10/img/bg.png) 50% 100% no-repeat;
-  background-size: 100% auto;
 
-}
+
+/*-----------------------red-packet.html end----------------------*/
+
+
+
+/*-----------------------kuaike.html start----------------------*/
+
 .kuaike-wrap{
   padding-bottom: 1rem;
   background: $red url(../../v10/img/bg.png) 50% 100% no-repeat;
@@ -240,7 +244,7 @@
 
 .active-banner{
   position: relative;
-  margin: .4rem auto 0 auto;
+  margin: .4rem auto 1.5rem auto;
   width: 15rem;
   height: 8.25rem;
   &:after{
@@ -300,6 +304,11 @@
     text-shadow: 1px 1px 2px #1e325b;
   }
 }
+/*-----------------------kuaike.html end----------------------*/
+
+
+
+/*-----------------------message.html start----------------------*/
 .message-wrap{
   padding-bottom: 1rem;
   background: url(../../v10/img/bg.png) 50% 100% no-repeat;
@@ -331,3 +340,222 @@
     }
   }
 }
+
+/*-----------------------message.html end----------------------*/
+
+
+/*-----------------------shaoge.html start----------------------*/
+
+.shaokao-con-item{
+  position: relative;
+  margin: 0 auto;
+  padding-left: 2rem;
+  width: 12.35rem;
+  line-height: 1.2;
+  i{
+    margin: 0;
+    font-size: $fz12;
+    color: #a2a2a2;
+    font-style: normal;
+    display: block;
+  }
+  p{
+    margin: 0;
+    font-size: $fz14;
+    color: #000;
+  }
+  &:nth-of-type(1){
+    &:before{
+      content: "1";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-image: linear-gradient(180deg,#ff9c46,#fd6663);
+      font-family: icomoon;
+      text-align: center;
+      line-height: 1.5rem;
+      font-size: $fz20;
+      color: #ffffff;
+    }
+  }
+  &:nth-of-type(2){
+    &:before{
+      content: "2";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-image: linear-gradient(180deg,#ff9c46,#fd6663);
+      font-family: icomoon;
+      text-align: center;
+      line-height: 1.5rem;
+      font-size: $fz20;
+      color: #ffffff;
+    }
+  }
+  &:nth-of-type(3){
+    &:before{
+      content: "3";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-image: linear-gradient(180deg,#ff9c46,#fd6663);
+      font-family: icomoon;
+      text-align: center;
+      line-height: 1.5rem;
+      font-size: $fz20;
+      color: #ffffff;
+    }
+  }
+  &:nth-of-type(4){
+    &:before{
+      content: "4";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-image: linear-gradient(180deg,#ff9c46,#fd6663);
+      font-family: icomoon;
+      text-align: center;
+      line-height: 1.5rem;
+      font-size: $fz20;
+      color: #ffffff;
+    }
+  }
+  &:nth-of-type(5){
+    &:before{
+      content: "5";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-image: linear-gradient(180deg,#ff9c46,#fd6663);
+      font-family: icomoon;
+      text-align: center;
+      line-height: 1.5rem;
+      font-size: $fz20;
+      color: #ffffff;
+    }
+  }
+  &:nth-of-type(6){
+    &:before{
+      content: "6";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-image: linear-gradient(180deg,#ff9c46,#fd6663);
+      font-family: icomoon;
+      text-align: center;
+      line-height: 1.5rem;
+      font-size: $fz20;
+      color: #ffffff;
+    }
+  }
+  &:nth-of-type(7){
+    &:before{
+      content: "\f60a";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-image: linear-gradient(180deg,#ff9c46,#fd6663);
+      font-family: icomoon;
+      text-align: center;
+      line-height: 1.5rem;
+      font-size: $fz20;
+      color: #ffffff;
+    }
+  }
+}
+.tar{
+  padding-right: 2rem;
+  text-align: right;
+}
+
+.s-line{
+  position: relative;
+  margin: .8rem auto;
+  width: 10rem;
+  height: .25rem;
+  background-color: #f4f5f7;
+  display: block;
+  &:before{
+    content: "";
+    position: absolute;
+    top: -.85rem;
+    left: -.6rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-left: .25rem solid #f4f5f7;
+    border-bottom: .25rem solid #f4f5f7;
+    border-bottom-left-radius: .8rem;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -.6rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-right: .25rem solid #f4f5f7;
+    border-top: .25rem solid #f4f5f7;
+    border-top-right-radius: .8rem;
+  }
+}
+.s-line2{
+  margin: 0 auto;
+  width: 11.1rem;
+  height: 1.75rem;
+  border-right: .25rem solid #f4f5f7;
+  display: block;
+}
+
+.s-line3{
+  position: relative;
+  margin: .8rem auto;
+  width: 10rem;
+  height: .25rem;
+  background-color: #f4f5f7;
+  display: block;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -.6rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-left: .25rem solid #f4f5f7;
+    border-top: .25rem solid #f4f5f7;
+    border-top-left-radius: .8rem;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    top: -.85rem;
+    right: -.6rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-right: .25rem solid #f4f5f7;
+    border-bottom: .25rem solid #f4f5f7;
+    border-bottom-right-radius: .8rem;
+  }
+}
+
+/*-----------------------shaoge.html end----------------------*/
