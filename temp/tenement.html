@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../v10/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../v10/css/amazeui.min.css">
+    <link rel="stylesheet" href="../v10/css/cy-index.css"/>
+
+</head>
+<body>
+<div class="box-wrap">
+    <div class="head">
+        <a class="icon-">&#xf604;</a>
+        <div>物业费</div>
+    </div>
+    <div class="ten_char">
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="ten_top"><span class="icon-red">&#xf60d;</span>房源信息</div>
+                    <div class="ten_char_red">24号楼1单元101</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <div class="ten_top"><span class="icon-red">&#xf60d;</span>物业费标准</div>
+                    <div class="ten_char_red">30元/年/m<sup>2</sup></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="ten_top"><span class="icon-red">&#xf60d;</span>您的面积</div>
+                    <div class="ten_char_red"><input class="input" type="text" placeholder="3026.4" name="num">m<sup>2</sup></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="ten_top"><span class="icon-red">&#xf618;</span>需要缴纳费用</div>
+                    <div class="ten_char_red"><input class="input" type="text" placeholder="113026.4" name="num">元/年</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="ten_bottom">
+        最终解释权归大华集团大连置业有限公司所有<br>
+        请到大华一期会计室缴费并领取相应发票<br>
+        如有疑问详情咨询 <span>84770071</span>
+    </div>
+
+
+
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

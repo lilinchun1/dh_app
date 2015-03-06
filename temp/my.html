@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../v10/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../v10/css/amazeui.min.css">
+    <link rel="stylesheet" href="../v10/css/cy-index.css"/>
+
+</head>
+<body>
+<div class="box-wrap">
+    <div class="head_null">
+        <div>我</div>
+    </div>
+    <div>
+        <div></div>
+        <div onclick="document.getElementById('pop-up').style.display='block';">
+            <a href="#">
+                <img src="../v10/img/img.jpg" alt=""/>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <div class="news_body my_mbottom">
+        <ul>
+            <li class="my_bottom">
+                 <a href=""><span class="icon-salmon">&#xf61f;</span>实时动态 <i class="icon-">&#xf623;</i></a>
+            </li>
+    </div>
+    <div class="news_body my_mbottom">
+        <ul>
+            <li><a href=""><span class="icon-yellow">&#xf603;</span>实时动态 <i class="icon-">&#xf623;</i></a></li>
+            <li><a href=""><span class="icon-green">&#xf60a;</span>实时动态 <i class="icon-">&#xf623;</i></a></li>
+            <li class="my_bottom"><a href=""><span class="icon-blue">&#xf61e;</span>实时动态 <i class="icon-">&#xf623;</i></a></li>
+        </ul>
+    </div>
+    <div class="news_body my_mbottom_0">
+        <ul>
+            <li class="my_bottom"><a href=""><span class="icon-blue">&#xf61b;</span>实时动态 <i class="icon-">&#xf623;</i></a></li>
+    </div>
+</div>
+<div class="home_pof">
+    <ul>
+        <li>
+            <a href="#">
+                <div class="icon-pof">&#xf60d;</div>
+                <div class="char_pof">社区中心</div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon-pof">&#xf60d;</div>
+                <div class="char_pof">购房中心</div>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="red">
+                <div class="icon-pof">&#xf615;</div>
+                <div class="char_pof">我</div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div id="pop-up" style=" display:none;" onclick="document.getElementById('pop-up').style.display='none';">
+    <div class="pop_my">
+        <img src="../v10/img/img.jpg" alt=""/>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>
