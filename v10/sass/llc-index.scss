@@ -27,8 +27,8 @@
 .red-info-tt{
   position: relative;
   font-size: $fz16;
-  height: 2.35rem;
-  text-indent: 1.25rem;
+  min-height: 2.35rem;
+  padding: 0 1.25rem;
   &:before{
     content: "\f600";
     font-family: 'icomoon';
@@ -68,7 +68,7 @@
   }
   article{
     height: 10.4rem;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   h2{
     margin: 0 1.25rem 0 2rem;
@@ -124,10 +124,14 @@
 .red-packet-wrap{
   padding-bottom: 1rem;
   background: url(../../v10/img/bg.png) 50% 100% no-repeat;
+  background-size: 100% auto;
+
 }
 .kuaike-wrap{
   padding-bottom: 1rem;
   background: $red url(../../v10/img/bg.png) 50% 100% no-repeat;
+  background-size: 100% auto;
+  min-height: 100vh;
   .red-packet-item{
     background-color: #ffd842;
     color: $red;
@@ -174,20 +178,35 @@
   padding: 0;
   height: 5rem;
   overflow: hidden;
+  background: url(../../v10/img/vip.png) 0 0 no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
 }
 .kuaike-tt-left {
   float: left;
   margin-top: .75rem;
   width: 10.3rem;
   height: 3.5rem;
-  line-height: 3.5rem;
   font-size: $fz24;
   color: #742b25;
-  text-indent: 3.5rem;
   box-shadow: -1px 0 0 #ddae3c inset;
-  background: url(../../v10/img/kuaike.png) 1rem 50% no-repeat;
-  -webkit-background-size: 2.2rem auto;
-  background-size: 2.2rem auto;
+  img{
+    float: left;
+    margin-top: .7rem;
+    margin-left: 1rem;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  span{
+    margin-top: .7rem;
+    margin-right: .6rem;
+    float: right;
+    width: 6.2rem;
+    height: 2.5rem;
+    font-size: $fz16;
+    line-height: 1.2rem;
+    overflow: hidden;
+  }
 }
 .kuaike-tt-right{
   float: left;
@@ -205,4 +224,16 @@
       margin-top: 1rem;
     }
   }
+}
+.alert-info{
+  position: absolute;
+  top: 8.7rem;
+  left: 2.4rem;
+  color: $yellow;
+  font-size: $fz12;
+  color: #ffd842;
+}
+.alert-info2{
+  top: 21.4rem;
+  left: 7rem;
 }
