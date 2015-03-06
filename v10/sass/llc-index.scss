@@ -345,7 +345,12 @@
 
 
 /*-----------------------shaoge.html start----------------------*/
-
+.shaokao-wrap{
+  padding-bottom: 6rem;
+  background: url(../../v10/img/bg1.png) 50% 100% no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
 .shaokao-con-item{
   position: relative;
   margin: 0 auto;
@@ -557,5 +562,17 @@
     border-bottom-right-radius: .8rem;
   }
 }
-
+.shaokao-btn{
+  margin: 1rem auto;
+  width: 10rem;
+  height: 2rem;
+  background-color: $red;
+  border-radius: 1rem;
+  color: #ffffff;
+  font-size: $fz14;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 /*-----------------------shaoge.html end----------------------*/
