@@ -898,4 +898,16 @@
 {
   background-color: #fff;
 }
+
+.shaokao-con{
+  span{
+    &:nth-last-of-type(1){
+      width: 5rem;
+      margin: .8rem 0 0 8rem;
+    }
+  }
+  .cent{
+    margin: .8rem 0 0 6.8rem;
+  }
+}
 /*-----------------------shaokao-succeed.html end----------------------*/
