@@ -649,7 +649,7 @@ input[name="checkbox"]:checked {
   background-color: #fff;
   border-top:1px solid #a7a7a7;
   width: 100%;
-  margin-top: .6rem;
+  margin-top: .8rem;
   border-bottom:1px solid #a7a7a7;
   ul{
     width: 15.5rem;
@@ -737,7 +737,7 @@ input[name="checkbox"]:checked {
         float: right;
         color: #c7c7cc;
         line-height: 2.2rem;
-        margin-right: .4rem;
+        margin-right: .5rem;
       }
     }
 
@@ -1251,6 +1251,7 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
       }
       input{
         float: left;
+        margin-left: .4rem;
         width: 10rem;
         line-height: 2.2;
         height: 2.6em;
@@ -1443,4 +1444,157 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
 }
 .start_top{
   margin-top: .8rem;
+}
+/*-----------------------发布消息 issue-news.html----------------------*/
+.ssue_bottom{
+  margin-bottom: .8rem;
+  background-color: #fff;
+}
+.issue_ul{
+  width: 100%;
+  margin-top: .8rem;
+  border-top:1px solid #a7a7a7;
+  border-bottom:1px solid #a7a7a7;
+  padding-bottom: .8rem;
+  ul{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    li{
+      width: 21.25%;
+      float: left;
+      margin-right: 5%;
+      margin-top: 5%;
+    }
+    .issue_a{
+      a{
+        display: block;
+        img{
+          width: 100%;
+        }
+      }
+
+    }
+    .issue_right{
+    margin-right:0;
+  }
+  }
+}
+.issue_text{
+  position: relative;
+  width: 94%;
+  margin: 0 auto;
+  margin-top: .8rem;
+  border:1px solid #a7a7a7;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: .6rem;
+  -o-border-radius: .6rem;
+  -moz-border-radius: .6rem;
+  -webkit-border-radius: .6rem;
+  height: 3.9rem;
+  textarea{
+    width: 95%;
+    margin-top: .3rem;
+    height: 3.2rem;
+    line-height: 1rem;
+    font-size: .6rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align: left;
+    padding-left: .5rem;
+    color: #dbdbdb;
+  }
+  span{
+    position: absolute;
+    bottom:0;
+    right: .2rem;
+    width: 2rem;
+    font-size: .6rem;
+    text-align: center;
+    color: #999999;
+  }
+}
+
+
+.pop_issue{
+  width:100%; height:100%; position:fixed; top:0px; left:0px;z-index:999999999; background:rgba(0,0,0,0.4); background-size:100%;
+  overflow-y: auto;
+  .pop_issue_0{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    border-top:1px solid #d6d6dd;
+    a{
+      width: 100%;
+      display: block;
+      background-color: #ffffff;
+      border-bottom: 1px solid #a7a7a7;
+      text-align: center;
+      color: #000;
+      font-size: .8rem;
+      line-height: 2.5rem;
+
+    }
+    .pop_border{
+      border-bottom:22px solid #d6d6dd;
+    }
+  }
+}
+
+/*-----------------------设置 install.html----------------------*/
+.ins_box{
+  width: 100%;
+  margin-top: .8rem;
+  border-bottom: 1px solid #a7a7a7;
+  border-top:1px solid #a7a7a7;
+  height: 2.2rem;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+  background-color: #fff;
+
+  a{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    .ins_char{
+      font-size: .8rem;
+      line-height: 2.2rem;
+      float: left;
+      margin-left: .5rem;
+    }
+    i{
+      float: right;
+      font-size: .8rem;
+      color: #c7c7cc;
+      line-height: 2.2rem;
+      margin-right: .5rem;
+    }
+    span{
+      font-size: .6rem;
+      color: #fff;
+      background-color: #999999;
+      width: 1.3rem;
+      height: .8rem;
+      line-height: .8rem;
+      float: right;
+      text-align: center;
+      border-radius: .2rem;
+      -o-border-radius: .2rem;
+      -moz-border-radius: .2rem;
+      -webkit-border-radius: .2rem;
+      margin-top: .7rem;
+    ;
+
+    }
+  }
+}
+.ins_top{
+  margin-top: .4rem;
 }

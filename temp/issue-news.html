@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../v10/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../v10/css/amazeui.min.css">
+    <link rel="stylesheet" href="../v10/css/cy-index.css"/>
+
+</head>
+<body>
+<div class="box-wrap">
+    <div class="head">
+        <a class="icon-">&#xf604;</a>
+        <div>发布消息</div>
+    </div>
+
+    <div class="news_body start_top ssue_bottom">
+        <ul>
+
+            <li class="my_bottom"><a href="">消息类型<sup>*</sup><i class="icon-news">&#xf623;</i></a></li>
+
+        </ul>
+    </div>
+    <div class="pass_text news_body">
+        <ul>
+
+            <li><em>消息主题<sup>*</sup></em> <input type="text" name="pass" placeholder="请设置您的新密码"/></li>
+            <li class="ar_bottom"><em>发布人<sup>*</sup></em><input type="text" name="pass" placeholder="请再次填入"/></li>
+
+        </ul>
+    </div>
+
+    <div class="issue_ul">
+        <ul>
+            <li>
+                <img src="../v10/img/issue_0.png" alt=""/>
+            </li>
+            <li>
+                <img src="../v10/img/issue_2.png" alt=""/>
+            </li>
+            <li>
+                <img src="../v10/img/issue_3.png" alt=""/>
+            </li>
+            <li class="issue_right">
+                <img src="../v10/img/issue_4.png" alt=""/>
+            </li>
+            <li>
+                <img src="../v10/img/issue_5.png" alt=""/>
+            </li>
+
+
+            <li onclick="document.getElementById('pop-up_1').style.display='block';" class="issue_a">
+                <a href="#"><img src="../v10/img/issue_1.png" alt=""/></a>
+            </li>
+        </ul>
+    </div>
+    <div class="issue_text">
+        <textarea >详细描述下……</textarea>
+         <span>
+                500
+            </span>
+    </div>
+
+    <a href="＃" class="stare_button">提交</a>
+
+</div>
+
+
+<div id="pop-up_1" style=" display:none;" >
+    <div class="pop_issue">
+        <div class="pop_issue_0">
+            <a href="#">拍照</a>
+            <a href="#" class="pop_border">从手机相册选择</a>
+            <a href="" onclick="document.getElementById('pop-up_1').style.display='none';">取消</a>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

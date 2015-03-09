@@ -576,3 +576,140 @@
   appearance: none;
 }
 /*-----------------------shaoge.html end----------------------*/
+
+/*-----------------------function-info.html start----------------------*/
+.function-wrap{
+  background-color: $bg-color;
+}
+.function-info-list{
+  padding: 0;
+  margin-left: 2rem;
+  width: 13.25rem;
+  li{
+    padding-bottom: .2rem;
+    position: relative;
+    width: 13.25rem;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 1.05rem;
+      left: -1rem;
+      width: .15rem;
+      height: 100%;
+      background-color: #da3c3c;
+    }
+  }
+  h1{
+    padding: 0 .75rem;
+    margin-bottom: 0;
+    height: 1.95rem;
+    line-height: 1.95rem;
+    color: #ffffff;
+    background-color: #da3c3c;
+    border-bottom: .25rem solid #9a0505;
+    font-size: $fz14;
+    font-weight: normal;
+    &:before{
+       content: '';
+       position: absolute;
+       top: .75rem;
+       left: -1.3rem;
+       width: .7rem;
+       height: .7rem;
+       background-color: #da3c3c;
+       border-radius: 50%;
+     }
+    &:after{
+      content: '';
+      position: absolute;
+      top: .91rem;
+      left: -1.14rem;
+      width: .4rem;
+      height: .4rem;
+      background-color: $bg-color;
+      border-radius: 50%;
+    }
+  }
+  p{
+    margin: 0;
+    padding: .5rem 0.75rem;
+    color: #5c5c5c;
+    font-size: $fz12;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+}
+/*-----------------------function-info.html end----------------------*/
+
+/*-----------------------message-list.html start----------------------*/
+
+.message-list-wrap{
+  background-color: $bg-color;
+}
+.msg-list{
+  margin: 0;
+  padding: 0;
+  li{
+    margin: 0;
+    padding: 0;
+    height: 3.55rem;
+    border-bottom: 1px solid $border-color;
+    background-color: #ffffff;
+    overflow: hidden;
+    h1{
+      float: left;
+      padding: 0 .85rem;
+      margin: .6rem 0 0 0;
+      width: 13rem;
+      height: .85rem;
+      line-height: .85rem;
+      font-size: $fz14;
+      color: #000;
+      overflow: hidden;
+      font-weight: normal;
+    }
+    time{
+      float: right;
+      color: $font-color999;
+    }
+    p{
+      float: left;
+      margin: 0;
+      padding: .2rem .85rem;
+      width: 13rem;
+      color: $font-color999;
+      font-size: $fz12;
+      line-height: 1.2;
+    }
+  }
+  .log-pic{
+    position: relative;
+    margin: .6rem -0px 0 .6rem;
+    float: left;
+    width: 2.4rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    font-size: 1.75rem;
+    background-color: #da3c3c;
+    color: #ffffff;
+    border-radius: .25rem;
+    span{
+      position: absolute;
+      top: -.35rem;
+      right: -.35rem;
+      width: .7rem;
+      height: .7rem;
+      line-height: .7rem;
+      background-color: #da3c3c;
+      border-radius: 50%;
+      text-align: center;
+      color: #ffffff;
+      font-size: $fz10;
+      border: .05rem solid #fff;
+      letter-spacing: -.1rem;
+      overflow: hidden;
+    }
+  }
+}
+/*-----------------------message-list.html end----------------------*/
