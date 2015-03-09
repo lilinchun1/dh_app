@@ -819,10 +819,13 @@ input[name="checkbox"]:checked {
 
 /*-----------------------物业费----------------------*/
 .ten_char{
-  width: 90%;
-  margin: 0 auto;
+  background-color: #fff;
+  width: 100%;
+  margin-top: .4rem;
 
   ul{
+    width: 90%;
+    margin: 0 auto;
     overflow: hidden;
     background-color: #fff;
 
@@ -923,6 +926,7 @@ input[name="checkbox"]:checked {
   overflow: hidden;
   padding-top: .4rem;
   padding-bottom: .4rem;
+  background-color: #fff;
 
   .my_two{
     float: left;
@@ -984,18 +988,22 @@ input[name="checkbox"]:checked {
 
 /*----------------微社区 community.html-----------------------------*/
 .combox{
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 
   ul{
     li{
       width: 100%;
+
       overflow: hidden;
-      margin-top: 1rem;
+      padding-top: .6rem;
+      border-top:1px solid #f2f2f1;
+      padding-bottom: .6rem;
       .com_head{
         width: 2.15rem;
         height: 2.15rem;
         float: left;
+        margin-left: .5rem;
         img{
           width: 2.15rem;
           height: 2.15rem;
@@ -1402,6 +1410,63 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
       margin-top: 1rem;
     }
   }
+}
+.icon-favor_r{
+  margin: 0 auto;
+  margin-top: 2.925rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  -o-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  background-color: #d9dadb;
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 5rem;
+  transform: rotate(-45deg);
+  margin-bottom: .4rem;
+
+
+}
+.favor_char{
+  line-height: 1.45rem;
+  color: #3c4144;
+  text-align: center;
+  font-size: .8rem;
+  width: 75%;
+  margin: 0 auto;
+}
+.favor_text{
+  font-size: .7rem;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  color: #aaaaaa;
+
+
+}
+.favor_a{
+  width:5.6rem;
+  margin: 0 auto;
+  margin-top: 1.3rem;
+  line-height: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid #60646f;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: .8rem;
+  -o-border-radius: .8rem;
+  -moz-border-radius: .8rem;
+  -webkit-border-radius: .8rem;
+  font-size: .6rem;
+  color: #60646f;
+  text-align: center;
+  display: block;
+
 }
 /*-------------------自费管家 steward.html--------------------------*/
 .stew{
