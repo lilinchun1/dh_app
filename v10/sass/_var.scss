@@ -94,7 +94,7 @@ html {
     color: #fff;
     line-height: 2.2rem;
     width: 12rem;
-    font-size: .8rem;
+    font-size:1rem;
 
 
   }
@@ -106,25 +106,14 @@ html {
     text-align: center;
     display: block;
     z-index: 2;
-    font-size: .8rem;
+    font-size: .7rem;
     em{
-      position: absolute;
-      top:.3rem;
-      right:.2rem;
-      width: .8rem;
-      height: .8rem;
-      border-radius: .8rem;
-      -o-border-radius: .8rem;
-      -moz-border-radius: .8rem;
-      -webkit-border-radius: .8rem;
-      background-color: #fff;
-      color: #da3c3c;
-      line-height: .8rem;
-      text-align: center;
-      z-index: 3;
-      font-size: .6rem;
-      letter-spacing: -.1rem;
+      position: absolute;top: .3rem;right: .2rem;width: .8rem;height: .8rem;border-radius: .8rem;-o-border-radius: .8rem;-moz-border-radius: .8rem;-webkit-border-radius: .8rem;background-color: #fff;color: #da3c3c;line-height: .8rem;text-align: center;z-index: 3;font-size: .6rem;letter-spacing: -.1rem;
     }
+  }
+  .yellow{
+    color: #f7bb48;
+    font-size: .7rem;
   }
   .icon-span{
     line-height: 2.2rem;
@@ -134,7 +123,7 @@ html {
     text-align: center;
     display: block;
     z-index: 2;
-    font-size:1rem;
+    font-size:1.3rem;
   }
 }
 /*-----------------------灰色----------------------*/
@@ -158,7 +147,7 @@ html {
     color: #282737;
     line-height: 2.2rem;
     width: 12rem;
-    font-size: .8rem;
+    font-size:1rem;
 
   }
 }
@@ -175,7 +164,7 @@ html {
     color: #282737;
     line-height: 2.2rem;
     width: 12rem;
-    font-size: .8rem;
+    font-size:1rem;
 
   }
   span{
@@ -186,7 +175,7 @@ html {
     text-align: center;
     display: block;
     z-index: 2;
-    font-size: .8rem;
+    font-size: 1rem;
   }
 }
 /*---------------------------------------------*/
@@ -215,7 +204,7 @@ html {
     width: 100%;
     color: #fff;
     line-height: 2.2rem;
-    font-size: .8rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -243,7 +232,7 @@ html {
 
         }
         .char_pof{
-          font-size: .6rem;
+          font-size: .5rem;
           line-height: 1rem;
           text-align: center;
           color: #5f646e;

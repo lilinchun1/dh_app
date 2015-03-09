@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../v10/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../v10/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../v10/css/amazeui.min.css">
+    <link rel="stylesheet" href="../v10/css/cy-index.css"/>
+</head>
+<body>
+<div class="box-wrap">
+    <div class="head">
+        <a class="icon-">&#xf604;</a>
+        <div>商家优惠</div>
+    </div>
+
+    <!--选项卡-->
+    <div data-am-widget="tabs" class="am-tabs am-tabs-default">
+        <ul class="am-tabs-nav am-cf">
+            <li class="ac_tabs">
+                <a href="[data-tab-panel-0]">当前活动</a>
+            </li>
+            <li class="ac_tabs_r">
+                <a href="[data-tab-panel-1]">活动回顾</a>
+            </li>
+        </ul>
+        <div class="am-tabs-bd">
+            <ul data-tab-panel-0 class="am-tab-panel am-active">
+                <li>
+                    <a class="favor">
+                        <div class="red-packet-item kuaike-tt fav_kua">
+                            <div class="kuaike-tt-left">
+                                <img src="../v10/img/kuaike.png" alt=""/>
+                                <span>快客</span>
+                            </div>
+                            <div class="kuaike-tt-right">
+                                <p>有效期至</p>
+                                <p>2015-05-18</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="red-packet-item kuaike-tt fav_fks">
+                            <div class="kuaike-tt-left">
+                                <img src="../v10/img/fks.png" alt=""/>
+                                <span class="fav_span">快客会员卡测试卡测试测试快客会员卡测试卡测试测试快客会员卡测试卡测试测试快客会员卡测试卡测试测试</span>
+                            </div>
+                            <div class="kuaike-tt-right_1">
+                                <p>有效期至</p>
+                                <p>2015-05-18</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="red-packet-item kuaike-tt fav_jianm">
+                            <div class="kuaike-tt-left">
+                                <img src="../v10/img/jianm.png" alt=""/>
+                                <span  class="fav_span">快客会员卡测试卡测试测试快客会员卡测试卡测试测试快客会员卡测试卡测试测试快客会员卡测试卡测试测试</span>
+                            </div>
+                            <div class="kuaike-tt-right_1">
+                                <p>有效期至</p>
+                                <p>2015-05-18</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="red-packet-item kuaike-tt fav_kua">
+                            <div class="kuaike-tt-left">
+                                <img src="../v10/img/hongl.png" alt=""/>
+                                <span>快客会员卡测试卡测试测试快客会员卡测试卡测试测试快客会员卡测试卡测试测试快客会员卡测试卡测试测试</span>
+                            </div>
+                            <div class="kuaike-tt-right">
+                                <p>有效期至</p>
+                                <p>2015-05-18</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<script type="text/javascript" src="../v10/js/api.js"></script>
+<script src="../v10/js/jquery.min.js"></script>
+<script src="../v10/js/amazeui.min.js"></script>
+<script src="../v10/js/global.js"></script>
+</html>
