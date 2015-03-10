@@ -24,7 +24,7 @@
                 <img src="../v10/img/activity/activity_0.jpg">
                 <div class="am-slider-desc">
                     <div class="newe_left">最新通知</div>
-                    <div class="newe_desc_char">测试文字可以写多少文字才可以串行</div>
+                    <div class="newe_desc_char">测试文字可以写多少文字才可以串行啊啊啊啊啊啊啊啊啊啊啊啊</div>
                     <div class="icon-newe">155天前 &#xf607; 10 <span>New</span></div>
                     <div class="icon-newe_char">更多&#xf623;</div>
                 </div>
@@ -50,7 +50,7 @@
         </ul>
     </div>
 </div>
-</body>
+<script src="../v10/js/jquery-1.8.3.min.js"></script>
 <script>
     (function (doc, win) {
         var docEl = doc.documentElement,
@@ -65,10 +65,19 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
+
+
+    $(".newe_desc_char").each(function(i){
+        var divH = $(this).height();
+        var $p = $("p", $(this)).eq(0);
+        while ($p.outerHeight() > divH) {
+            $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
+        };
+    });
 </script>
 <script type="text/javascript" src="../v10/js/api.js"></script>
 <script src="../v10/js/jquery.min.js"></script>
 <script src="../v10/js/amazeui.min.js"></script>
 <script src="../v10/js/global.js"></script>
-</html>
+</body>
 </html>
