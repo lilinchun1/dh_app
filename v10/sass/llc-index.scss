@@ -69,7 +69,7 @@
     color: $red;
   }
   article{
-    height: 10.4rem;
+    height: 9rem;
     overflow-y: auto;
   }
   h2{
@@ -109,7 +109,7 @@
 .red-btn{
   position: relative;
   display: block;
-  font-size: $fz14;
+  font-size: $fz16;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -133,7 +133,7 @@
 
 .kuaike-wrap{
   padding-bottom: 1rem;
-  background: $red url(../../v10/img/bg.png) 50% 100% no-repeat;
+  background: $red url(../../v10/img/bg_0.png) 50% 100% no-repeat;
   background-size: 100% auto;
   min-height: 100vh;
   .red-packet-item{
@@ -217,7 +217,7 @@
   margin-top: .75rem;
   width: 4.7rem;
   height: 3.5rem;
-  box-shadow: 2px 0 0 #ffe686 inset;
+  box-shadow: 1px 0 0 #ffe686 inset;
   p{
     margin: 0;
     width: 3.75rem;
@@ -232,21 +232,22 @@
 .alert-info{
   position: absolute;
   top: 8.7rem;
-  left: 2.4rem;
+  left: 3.1rem;
   color: $yellow;
   font-size: $fz12;
   color: #ffd842;
 }
 .alert-info2{
-  top: 21.4rem;
+  top: 20.4rem;
   left: 7rem;
 }
 
 .active-banner{
   position: relative;
-  margin: .4rem auto 1.5rem auto;
+  margin:.4rem auto 1.5rem auto;
   width: 15rem;
   height: 8.25rem;
+  overflow: hidden;
   &:after{
     content: "";
     position: absolute;
@@ -363,6 +364,7 @@
     color: #a2a2a2;
     font-style: normal;
     display: block;
+    z-index: 9;
   }
   p{
     margin: 0;
@@ -373,7 +375,7 @@
     &:before{
       content: "1";
       position: absolute;
-      top: 0;
+      top: -1px;
       left: 0;
       width: 1.5rem;
       height: 1.5rem;
@@ -424,7 +426,7 @@
     &:before{
       content: "4";
       position: absolute;
-      top: 0;
+      top: -1px;
       left: 0;
       width: 1.5rem;
       height: 1.5rem;
@@ -506,8 +508,8 @@
     position: absolute;
     top: -.85rem;
     left: -.6rem;
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1rem;
+    height: 1.09rem;
     border-left: .25rem solid #f4f5f7;
     border-bottom: .25rem solid #f4f5f7;
     border-bottom-left-radius: .8rem;
@@ -553,10 +555,10 @@
   &:after{
     content: "";
     position: absolute;
-    top: -.85rem;
+    top: -.75rem;
     right: -.6rem;
     width: 1.1rem;
-    height: 1.1rem;
+    height: 1rem;
     border-right: .25rem solid #f4f5f7;
     border-bottom: .25rem solid #f4f5f7;
     border-bottom-right-radius: .8rem;
@@ -584,11 +586,14 @@
 .function-info-list{
   padding: 0;
   margin-left: 2rem;
+  margin-top: .6rem;
   width: 13.25rem;
   li{
-    padding-bottom: .2rem;
+    box-shadow:0  .2rem 0 #e0dcdc;
+    -webkit-box-shadow:0  .2rem 0 #ccc;
     position: relative;
     width: 13.25rem;
+    margin-bottom: .2rem;
     &:before{
       content: "";
       position: absolute;
@@ -671,6 +676,7 @@
     time{
       float: right;
       color: $font-color999;
+      font-size: .6rem;
     }
     p{
       float: left;
@@ -698,8 +704,8 @@
       position: absolute;
       top: -.35rem;
       right: -.35rem;
-      width: .7rem;
-      height: .7rem;
+      width: .8rem;
+      height: .8rem;
       line-height: .7rem;
       background-color: #da3c3c;
       border-radius: 50%;
@@ -707,8 +713,8 @@
       color: #ffffff;
       font-size: $fz10;
       border: .05rem solid #fff;
-      letter-spacing: -.1rem;
       overflow: hidden;
+      text-script: -.1rem;
     }
   }
 }
@@ -907,7 +913,8 @@
     }
   }
   .cent{
-    margin: .8rem 0 0 6.8rem;
+    margin:0 0 0 6.8rem;
+    width: 6rem;
   }
 }
 /*-----------------------shaokao-succeed.html end----------------------*/

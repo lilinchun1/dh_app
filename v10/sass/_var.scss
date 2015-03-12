@@ -68,47 +68,62 @@ html {
 .box-wrap{
   width: 16rem;
   min-height: 100vh;
+  padding-top: 2.2rem;
 }
+.box-wrap_1{
+  width: 16rem;
+  min-height: 100vh;
 
+}
+.hidden{display:none;}
+p, hr, ul, ol, dl, blockquote, pre, address, fieldset, figure{margin:0;}
 /*head*/
 /*-----------------------红色----------------------*/
 .head{
+
+  position:fixed;
+  top:0;
+  z-index:1001;
+  width:100%;
   background-color: #da3c3c;
-  height: 2.2rem;
+  box-shadow:1px 0px 1px rgba(0,0,0,0.6);
   overflow: hidden;
-  position: relative;
   a{
     line-height: 2.2rem;
     color: #fff;
-    float: left;
     width:2rem;
-    text-align: center;
+    text-align: right;
     display: block;
     z-index: 2;
-    font-size:1rem;
+    font-size:1.3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
   div{
+
     text-align: center;
-    float: left;
     color: #fff;
     line-height: 2.2rem;
-    width: 12rem;
-    font-size:1rem;
+    font-size:.9rem;
 
 
   }
   span{
     line-height: 2.2rem;
     color: #fff;
-    float: left;
     width:2rem;
-    text-align: center;
+    text-align:left;
     display: block;
     z-index: 2;
     font-size: .7rem;
-    em{
-      position: absolute;top: .3rem;right: .2rem;width: .8rem;height: .8rem;border-radius: .8rem;-o-border-radius: .8rem;-moz-border-radius: .8rem;-webkit-border-radius: .8rem;background-color: #fff;color: #da3c3c;line-height: .8rem;text-align: center;z-index: 3;font-size: .6rem;letter-spacing: -.1rem;
-    }
+    position: absolute;
+    top:0;
+    right: 0;
+
+  }
+  em{
+    position: absolute;top: .2rem;right:.3rem;width: .8rem;height: .8rem;border-radius: .8rem;-o-border-radius: .8rem;-moz-border-radius: .8rem;-webkit-border-radius: .8rem;background-color: #fff;color: #da3c3c;line-height: .8rem;text-align: center;z-index: 3;font-size: .5rem;
   }
   .yellow{
     color: #f7bb48;
@@ -117,93 +132,112 @@ html {
   .icon-span{
     line-height: 2.2rem;
     color: #fff;
-    float: left;
     width:2rem;
-    text-align: center;
+    text-align:left;
     display: block;
     z-index: 2;
     font-size:1.3rem;
+    position: absolute;
+    top:0;
+    right: 0;
   }
 }
 /*-----------------------灰色----------------------*/
 .head-grey {
+  position:fixed;
+  width: 100%;
+  top:0;
+  z-index:1001;
   background-color: #ffffff;
   height: 2.2rem;
   overflow: hidden;
-  a {
+  a{
     line-height: 2.2rem;
     color: #282737;
-    float: left;
-    width: 2rem;
-    text-align: center;
+    width:2rem;
+    text-align: right;
     display: block;
     z-index: 2;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    position: absolute;
+    top:0;
+    left:0;
   }
   div {
+    width: 100%;
     text-align: center;
-    float: left;
     color: #282737;
     line-height: 2.2rem;
-    width: 12rem;
-    font-size:1rem;
+    font-size:.9rem;
 
   }
 }
 /*---------------------------------------------*/
 .head-red {
+  position:fixed;
+  top:0;
+  z-index:1001;
   background-color: #ffffff;
   height: 2.2rem;
   overflow: hidden;
 
   div {
+    width: 100%;
     margin-left: 2rem;
     text-align: center;
-    float: left;
     color: #282737;
     line-height: 2.2rem;
-    width: 12rem;
-    font-size:1rem;
+    font-size:.9rem;
 
   }
   span{
     line-height: 2.2rem;
     color: #da3c3c;
-    float: left;
     width: 2rem;
-    text-align: center;
+    text-align:left;
     display: block;
     z-index: 2;
     font-size: 1rem;
+    position: absolute;
+    top:0;
+    right: 0;
   }
 }
 /*---------------------------------------------*/
 .head-the{
+  position:fixed;
+  top:0;
+  z-index:1001;
   background-color: transparent;
   overflow: hidden;
   a{
     line-height: 2.2rem;
     color: #fff;
-    float: left;
     width: 2rem;
-    text-align: center;
+    text-align: right;
     display: block;
     z-index: 2;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    position: absolute;
+    top:0;
+    right: 0;
   }
 }
 /*---------------------------------------------*/
 .head_null{
+  position:fixed;
+  top:0;
+  z-index:1001;
   width: 100%;
-  background-color: #da3c3c;
+  background-color:#da3c3c;
   height: 2.2rem;
   overflow: hidden;
-  position: relative;
+
   div{
     width: 100%;
     color: #fff;
     line-height: 2.2rem;
-    font-size: 1rem;
+    font-size: .9rem;
     text-align: center;
   }
 }
@@ -212,11 +246,15 @@ html {
   position: fixed;
   bottom:0;
   width: 100%;
+  z-index:1001;
   height: 2.5rem;
   border-top:1px solid #d8d8d8;
   background-color: #fff;
   ul{
     overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     li{
       float: left;
       width: 33.33333%;

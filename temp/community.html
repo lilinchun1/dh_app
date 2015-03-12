@@ -11,21 +11,19 @@
     <link rel="stylesheet" type="text/css" href="../v10/css/amazeui.min.css">
     <link rel="stylesheet" href="../v10/css/cy-index.css"/>
     <style>
-        body{
-            background-color: #fff;
-        }
+
     </style>
 </head>
 <body>
 <div class="box-wrap">
     <div class="head">
         <a class="icon-" href="home-pahe.html">&#xf604;</a>
-        <div>微社区</div>
+        <div>业主反馈</div>
         <span>发布</span>
     </div>
     <div class="combox">
         <ul>
-            <li>
+            <li class="com_li">
                 <div class="com_head">
                     <img src="../v10/img/img_0.jpg" alt=""/>
                 </div>
@@ -71,18 +69,18 @@
                     </div>
 
                     <div class="com_gred">
-                        <span>60分钟前</span>
-                        <a class="icon-" href="[data-tab-panel-0]">&#xf607;</a>
+                        <span>60分钟前啊啊啊啊啊啊啊啊啊啊</span>
+                        <a class="icon-com" href="#">&#xf627;</a>
                         <div data-tab-panel-0 class="com_grey">
-                            <a href="#" class="icon-">&#xf60e; 赞</a>
-                            <a href="#" class="icon-">&#xf607; 评论</a>
+                            <a href="#" class="icon-mm">&#xf60e; 赞</a>
+                            <a href="#" class="icon-mm">&#xf607; 评论</a>
                         </div>
                     </div>
                     <div class="com_praise">
                         <i></i>
-                        <span class="com_praise_char icon-">
-                            &#xf60e;测试我的名字可以用多么唱的文字才能保证不串行呢
-                        </span>
+                        <div class="com_praise_char icon-">
+                            &#xf60e;测试我
+                        </div>
                         <div class="com_praise_0">
                             <p>
                                 <span>
@@ -126,7 +124,7 @@
 
                 </div>
             </li>
-            <li>
+            <li  class="com_li">
                 <div class="com_head">
                     <img src="../v10/img/img_0.jpg" alt=""/>
                 </div>
@@ -137,7 +135,7 @@
                             没有规矩不成方圆，大华人讲求规矩不仅在口头上，在施工更是严格罗列出每一个啊啊啊啊啊啊啊啊啊啊啊啊
                         </p>
                     </div>
-                    <div class="com_ul">
+                    <div class="com_ul_img">
                         <a href="#">
                             <img src="../v10/img/img_0.jpg" alt=""/>
                         </a>
@@ -145,11 +143,11 @@
 
                     <div class="com_gred">
                         <span>60分钟前</span>
-                        <a class="icon-" href="[data-tab-panel-0]">&#xf607;</a>
+                        <a class="icon-com" href="#">&#xf627;</a>
                     </div>
                 </div>
             </li>
-            <li>
+            <li  class="com_li">
                 <div class="com_head">
                     <img src="../v10/img/img_0.jpg" alt=""/>
                 </div>
@@ -163,7 +161,7 @@
 
                     <div class="com_gred">
                         <span>60分钟前</span>
-                        <a class="icon-" href="[data-tab-panel-0]">&#xf607;</a>
+                        <a class="icon-com" href="#">&#xf627;</a>
                     </div>
                 </div>
             </li>
@@ -173,7 +171,11 @@
 
 
 </div>
-
+<div class="comm_text">
+    <input type="text" placeholder="评论" name="comm"/>
+    <a>提交</a>
+</div>
+<script src="../v10/js/jquery-1.8.3.min.js"></script>
 <script>
     (function (doc, win) {
         var docEl = doc.documentElement,
@@ -189,6 +191,13 @@
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
 
+    $(".com_text").each(function(i){
+        var divH = $(this).height();
+        var $p = $("p", $(this)).eq(0);
+        while ($p.outerHeight() > divH) {
+            $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
+        };
+    });
 
 </script>
 </body>

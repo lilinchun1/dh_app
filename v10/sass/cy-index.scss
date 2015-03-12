@@ -52,21 +52,24 @@ input[name="pass"]:-moz-placeholder {color:#afafaf; text-align: left;}
 input[name="num"]::-webkit-input-placeholder {color:#da3c3c;
   text-align: left;}
 input[name="num"]:-moz-placeholder {color:#da3c3c; text-align: left;}
-input[type="text"]{
+input[type="text"],input[type="tel"],input[type="password"]{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   line-height: normal!important;
+
 }
+
 select [name="select"]{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-input[name="reg"]::-webkit-input-placeholder {color:#ffaebc; }
+input[name="reg"]::-webkit-input-placeholder {color:#ffaebc;line-height: normal!important; font-size: .6rem; }
 
-input[name="reg"]:-moz-placeholder {color:#ffaebc; }
+input[name="reg"]:-moz-placeholder {color:#ffaebc;line-height: normal!important;
+  font-size: .6rem;}
 input[name="checkbox"] {
   border-radius:.1rem;
   -o-border-radius:.1rem;
@@ -96,7 +99,7 @@ input[name="checkbox"]:checked {
     width: 50%;
     float: left;
     background-color: #FFF;
-    border: #da3c3c solid .1rem;
+    border: #da3c3c solid 1px;
     border-top-left-radius: .4rem;
     -o-border-top-left-radius: .4rem;
     -moz-border-top-left-radius: .4rem;
@@ -115,7 +118,7 @@ input[name="checkbox"]:checked {
       background-color: transparent;
       color: #da3c3c;
       display: block;
-      font-size: .6rem;
+      font-size: .7rem;
       line-height: 1.35rem;
       text-align: center;
 
@@ -128,7 +131,7 @@ input[name="checkbox"]:checked {
     -webkit-box-sizing: border-box;
     width: 50%;
     float: right;
-    border: #da3c3c solid .1rem;
+    border: #da3c3c solid 1px;
     background-color: #fff;
     border-top-right-radius: .4rem;
     -o-border-top-right-radius: .4rem;
@@ -144,7 +147,7 @@ input[name="checkbox"]:checked {
       background-color: transparent;
       color: #da3c3c;
       display: block;
-      font-size: .6rem;
+      font-size: .7rem;
       line-height: 1.35rem;
       text-align: center;
 
@@ -155,19 +158,36 @@ input[name="checkbox"]:checked {
 }
 .am-tabs-default .am-tabs-nav .am-active{
   background-color: #da3c3c;
+  li{
+    margin: 0;
+    padding: 0;
+  }
   a{
     color: #FFF;
+    display: block;
   }
 }
 
 .am-tabs-bd{
   border:none;
+  padding-bottom: .6rem;
   img{
     width: 100%;
   }
 }
 .am-tabs-bd .am-tab-panel{
   padding: 0;
+  li{
+    margin: 0;
+    padding: 0;
+    margin-top: .4rem;
+  }
+}
+.am-tabs-bd .fav_li{
+  li{
+    height: 5rem;
+  }
+
 }
 .ac_img{
   overflow: hidden;
@@ -193,10 +213,11 @@ input[name="checkbox"]:checked {
     left: .75rem;
     width: 14.5rem;
     color: #fff;
-    text-shadow: 0px 2px 2px  #000;
+    text-shadow: 1px 1px 2px  #1e325b;
+    font-weight: bold;
     p{
-      font-size:1.5rem;
-      line-height: 1.5rem;
+      font-size:1.3rem;
+      line-height: 1.3rem;
       color: #fff;
       margin: 0;
       padding: 0;
@@ -217,18 +238,31 @@ input[name="checkbox"]:checked {
         font-size: .6rem;
         line-height:.8rem;
         margin-left: .6rem;
+        text-shadow: 1px 1px 2px  #1e325b;
       }
       span{
         font-size: .6rem;
-        line-height: .5rem;
+        line-height:1rem;
         color: #fff;
         display: block;
         margin-left: .6rem;
-        text-shadow: 0px 2px 2px  #000;
+        text-shadow: 1px 1px 2px  #1e325b;
+
       }
     }
     .new_act{
-      position: absolute;font-size: 0.5rem;color: #fff;right: 0.5rem;top: 0.5rem;background-color: #da3c3c;padding: 0.1rem;border-radius: .6rem;min-width: 1.1rem;text-align: center;border: 0.1rem solid;font-weight: bold;
+      position: absolute;
+      font-size: 0.5rem;
+      color: #fff;
+      right: 0.5rem;
+      top: 0.5rem;
+      background-color: #da3c3c;
+      padding: 0.1rem;
+      border-radius: .6rem;
+      min-width: 1.1rem;
+      text-align: center;
+      border:1px  solid #fff;
+      font-weight: bold;
     }
   }
   i{
@@ -236,29 +270,31 @@ input[name="checkbox"]:checked {
     bottom: .6rem;
     right: .4rem;
     color: #fcf700;
-    font-size: .6rem;
-    text-shadow: 0px 2px 2px  #000;
+    font-size: .5rem;
+    text-shadow: 1px 1px 2px  #1e325b;
   }
 }
 
 /*-----------------------登陆 enter.html----------------------*/
 .en_logo{
-  width:40%;
+  width:44%;
   margin:0 auto;
-  padding:2.5rem 0;
+  padding-top: 1rem;
+  padding-bottom: 2.7rem;
 }
 .en_text{
-  width: 13rem;
+  width: 16rem;
   margin: 0 auto;
   overflow: hidden;
   div{
-    width: 100%;
+    width: 13rem;
+    margin: 0 auto;
     margin-bottom: .6rem;
     overflow: hidden;
     .icon-enicon{
       color: #fff;
       line-height: 2.2rem;
-      font-size: .9rem;
+      font-size: .8rem;
       width:2rem;
       text-align: center;
       background-color:#fe8795 ;
@@ -280,7 +316,7 @@ input[name="checkbox"]:checked {
       height: 2.2rem;
     }
     input{
-      width: 10.8rem;
+      width: 11.2rem;
       float: left;
       padding-left: 1rem;
       font-size:.7rem;
@@ -300,17 +336,21 @@ input[name="checkbox"]:checked {
       -o-box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
+      margin-left: -.2rem;
 
     }
   }
 }
 .en_button{
-  border:2px #ffffff solid;
+  width: 13rem;
+  margin: 0 auto;
+  display: block;
+  border:1px #ffffff solid;
   border-radius: .7rem;
   -o-border-radius: .7rem;
   -moz-border-radius: .7rem;
   -webkit-border-radius: .7rem;
-  display: block;
+
   font-size:.8rem;
   line-height: 2.2rem;
   text-align: center;
@@ -318,31 +358,34 @@ input[name="checkbox"]:checked {
 
 }
 .en_button:hover{
-  color: #FFF;box-shadow: 0 0 20px #fff;
+  color: #FFF;box-shadow: 0 0 20px #fff;-o-box-shadow: 0 0 20px #fff;-moz-box-shadow: 0 0 20px #fff;
+  -webkit-box-shadow: 0 0 20px #fff;
 }
-.en_button:active {color: #FFF;box-shadow: 0 0 20px #fff inset;}
+.en_button:active {color: #FFF;box-shadow: 0 0 20px #fff inset;-o-box-shadow: 0 0 20px #fff;-moz-box-shadow: 0 0 20px #fff;
+  -webkit-box-shadow: 0 0 20px #fff;}
 .en_char{
   color: #FFF;
-  font-size: .7rem;
+  font-size: .6rem;
   width: 5rem;
   float: right;
   text-align:right;
   line-height: 1.5rem;
 
+  margin-right: 1.5rem;
+
 }
 .en_char_l{
   color: #FFF;
-  font-size: .7rem;
+  font-size: .6rem;
   width: 3rem;
   float:left;
   text-align:left;
   line-height: 1.5rem;
+  margin-left: 1.5rem;
+
 }
-.en_char_l:hover{
-  color: #282737;
-}
-.en_char:hover{
-  color: #282737;
+.en_char:hover,.en_char_l:hover{
+  color:#fff;
 }
 /*-----------------------注册 register.html----------------------*/
 .reg_top{
@@ -356,8 +399,8 @@ input[name="checkbox"]:checked {
   margin: 0 auto;
   overflow: hidden;
   .ren_text{
-    border-top:1px solid #fe8795;
-    border-bottom: 1px solid #fe8795;
+    border-top:1px solid #ff6a6a;
+    border-bottom: 1px solid #ff6a6a;
     overflow: hidden;
     border-top-right-radius: .6rem;
     -o-border-top-right-radius: .6rem;
@@ -377,19 +420,19 @@ input[name="checkbox"]:checked {
     }
     input{
       margin: 0;
-      width: 6rem;
+      width: 5.5rem;
       line-height: 2.2rem;
       height: 2.2rem;
-      font-size:.7rem;
+      font-size:.6rem;
       float: left;
       color:#ffaebc;
 
     }
     button{
-      width:3.5rem;
+      width:4rem;
       float: left;
-      border-right: 1px solid #fe8795;
-      border-left: 1px solid #fe8795;
+      border-right: 1px solid #ff6a6a;
+      border-left: 1px solid #ff6a6a;
       -o-border-radius: .6rem;
       -moz-border-radius: .6rem;
       -webkit-border-radius: .6rem;
@@ -404,7 +447,7 @@ input[name="checkbox"]:checked {
     }
   }
   div{
-    border-bottom: 1px solid #fe8795;
+    border-bottom: 1px solid #ff6a6a;
     overflow: hidden;
     span{
       width: 3.5rem;
@@ -432,12 +475,12 @@ input[name="checkbox"]:checked {
     }
     .select{
       float: right;
-      width: 5.5rem;
+      width: 4.3rem;
       border-bottom: none;
       position: relative;
       .icon-select{
         color: #fff;
-        font-size: .7rem;
+      font-size: .6rem;
         width: 1rem;
         text-align: right;
         position: absolute;
@@ -447,7 +490,7 @@ input[name="checkbox"]:checked {
         line-height: 2.2rem;
       }
       select{
-        width:8rem;
+        width:6rem;
         float: left;
         background-color: transparent;
         color: #ffaebc;
@@ -503,31 +546,32 @@ input[name="checkbox"]:checked {
   padding: 0;
   .cong_char{
     position: absolute;
-    top:10.4rem;
+    top:11.3rem;
     left: 10%;
     text-align: center;
     color: #fff;
-    width: 80%;
+    width:80%;
     font-weight: bold;
     font-size: 2rem;
-
+    line-height: 2.5rem;
   }
 
 }
 .cong_button{
   background-color: #f54343;
   text-align: center;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   border-radius: .6rem;
   -o-border-radius: .6rem;
   -moz-border-radius: .6rem;
   -webkit-border-radius: .6rem;
   color: #ffffff;
-  font-size: .8rem;
+  font-size: .9rem;
   line-height: 2.2rem;
   display: block;
   margin-top: 1rem;
+  font-weight: bold;
 }
 .cong_button:hover{
   color: #fff;
@@ -617,7 +661,7 @@ input[name="checkbox"]:checked {
 .icon-newe{
   color: #fff;
   width:11rem;
-  font-size: .6rem;
+  font-size: .5rem;
   line-height: 2rem;
   margin-left: .4rem;
   float: left;
@@ -629,18 +673,19 @@ input[name="checkbox"]:checked {
     -webkit-border-radius: .6rem;
     line-height:.7rem;
     color: #fff;
-    font-size: .6rem;
+    font-size: .5rem;
     width:1.5rem;
     height: .7rem;
     text-align: center;
   }
 }
 .icon-newe_char{
+  padding: 0.1rem 0.3rem;
   color: #fff;
-  font-size: .8rem;
-  width: 3rem;
+  font-size: .6rem;
+  width: 2.5rem;
   height: 1rem;
-  line-height: 1rem;
+  line-height: .8rem;
   background-color: #f9b50a;
   border-radius: .2rem;
   -o-border-radius: .2rem;
@@ -652,21 +697,22 @@ input[name="checkbox"]:checked {
 }
 .news_body{
   background-color: #fff;
-  border-top:1px solid #a7a7a7;
+  border-top:1px solid #d6d6dd;
   width: 100%;
   margin-top: .8rem;
-  border-bottom:1px solid #a7a7a7;
+  border-bottom:1px solid #d6d6dd;
   ul{
     width: 15.5rem;
     margin-left: .5rem;
     overflow: hidden;
     li{
-      border-bottom:1px solid #a7a7a7;
+      border-bottom:1px solid #d6d6dd;
       line-height: 2.2rem;
       color: #444444;
       font-size: .8rem;
       float: left;
       width: 100%;
+
       a{
         display: block;
         color: #444444;
@@ -678,54 +724,36 @@ input[name="checkbox"]:checked {
           color: #fff;
           float: left;
           margin-right: .4rem;
-        }
-        .icon-salmon{
-          width: 1rem;
-          height: 1rem;
-          line-height:1rem;
+          font-size: 1rem;
+          width: 1.3rem;
+          height: 1.3rem;
+          line-height:1.3rem;
           text-align: center;
-          margin-top: .60rem;
+          margin-top: .45rem;
           border-radius: .2rem;
           -o-border-radius: .2rem;
           -moz-border-radius: .2rem;
           -webkit-border-radius: .2rem;
+        }
+        .icon-salmon{
+
           background-color: #f99e8c;
         }
         .icon-yellow{
-          width: 1rem;
-          height: 1rem;
-          line-height:1rem;
-          text-align: center;
-          margin-top: .60rem;
-          border-radius: .2rem;
-          -o-border-radius: .2rem;
-          -moz-border-radius: .2rem;
-          -webkit-border-radius: .2rem;
+
           background-color: #ffd670;
         }
         .icon-green{
-          width: 1rem;
-          height: 1rem;
-          line-height:1rem;
-          text-align: center;
-          margin-top: .60rem;
-          border-radius: .2rem;
-          -o-border-radius: .2rem;
-          -moz-border-radius: .2rem;
-          -webkit-border-radius: .2rem;
+
           background-color: #acd183;
         }
         .icon-blue{
-          width: 1rem;
-          height: 1rem;
-          line-height:1rem;
-          text-align: center;
-          margin-top: .60rem;
-          border-radius: .2rem;
-          -o-border-radius: .2rem;
-          -moz-border-radius: .2rem;
-          -webkit-border-radius: .2rem;
+
           background-color: #6bceb5;
+        }
+        .icon-blue_1{
+
+          background-color: #79cbe8;
         }
         .icon-news{
           color: #c7c7cc;
@@ -734,7 +762,19 @@ input[name="checkbox"]:checked {
           margin-right: .4rem;
         }
         .notice_number{
-          background-color: #da3c3c;height:1rem;position: absolute;right: 1rem;line-height: 1rem;margin-top: 0.6rem;border-radius: 21rem;-webkit-border-radius: 1rem;color: #fff;font-size: 0.6rem;min-width: 1rem;text-align: center;
+          font-size: .5rem;
+          color: #fff;
+          background-color: #da3c3c;
+          width: .8rem;
+          height:.8rem;
+          line-height: .8rem;
+          float: right;
+          text-align: center;
+          border-radius: .8rem;
+          -o-border-radius: .8rem;
+          -moz-border-radius: .8rem;
+          -webkit-border-radius: .8rem;
+          margin-top: .7rem;
         }
 
       }
@@ -742,7 +782,8 @@ input[name="checkbox"]:checked {
         float: right;
         color: #c7c7cc;
         line-height: 2.2rem;
-        margin-right: .5rem;
+        margin-right: .4rem;
+
       }
     }
 
@@ -756,7 +797,7 @@ input[name="checkbox"]:checked {
   margin-top: .4rem;
   img{
     width: 100%;
-    height: 7rem;
+    height: 7.5rem;
     border-radius: .6rem;
     -o-border-radius: .6rem;
     -moz-border-radius: .6rem;
@@ -769,10 +810,13 @@ input[name="checkbox"]:checked {
 .home_pahe_ul{
   margin-top: .4rem;
   width: 100%;
-  padding-bottom: 2.6rem;
+  margin-bottom: 2.6rem;
+  background-color: #fff;
   ul{
     overflow: hidden;
-
+    .my_bottom {
+      border-bottom: none;
+    }
     li{
       width: 33.333333%;
       float: left;
@@ -794,9 +838,7 @@ input[name="checkbox"]:checked {
           line-height: 1rem;
         }
         .home_number{
-          position: absolute; top: .3rem; right: 1.1rem;min-width: 1rem;line-height: .8rem;font-size: 0.5rem;text-align: center;border: .1rem solid #fff;box-sizing: border-box;-o-box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;background-color: #da3c3c;color: #fff;border-radius: 1rem;-o-border-radius: 1rem;-moz-border-radius: 1rem;-webkit-border-radius: 1rem;
-
-          height:1rem;
+          position: absolute; top: .5rem; right: 1.4rem;min-width: 1rem;line-height: .8rem;font-size: 0.5rem;text-align: center;border: .1rem solid #fff;box-sizing: border-box;-o-box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;background-color: #da3c3c;color: #fff;border-radius: 1rem;-o-border-radius: 1rem;-moz-border-radius: 1rem;-webkit-border-radius: 1rem;  height:1rem;
 
         }
       }
@@ -812,13 +854,11 @@ input[name="checkbox"]:checked {
     li:nth-child(5){
       border-left: 1px solid #d8d8d8;
       border-right:1px solid #d8d8d8 ;
-      border-bottom:none;
       box-sizing: border-box;
       -o-box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
     }
-
   }
 }
 
@@ -863,10 +903,18 @@ input[name="checkbox"]:checked {
         }
         .ten_char_red{
           color: #da3c3c;
-          text-align: center;
           font-size: .8rem;
           line-height: 1.5rem;
           padding: .4rem 0;
+          width: 8rem;
+          margin: 0 auto;
+        }
+        .carent{
+          width:5rem;
+          text-align: center;
+          margin-left: 3.6rem;
+
+
         }
       }
     }
@@ -883,6 +931,20 @@ input[name="checkbox"]:checked {
   padding-right:.7rem;
   line-height: 1.4rem;
   margin-right: .3rem;
+
+}
+.input_1{
+  width: 8rem;
+  border-radius: .2rem;
+  -o-border-radius: .2rem;
+  -moz-border-radius: .2rem;
+  -webkit-border-radius: .2rem;
+  border:#e8e8e8 solid 1px;
+  padding-left:.4rem;
+  padding-right:.4rem;
+  line-height: 1.4rem;
+  margin-right: .3rem;
+
 
 }
 .ten_bottom{
@@ -924,8 +986,8 @@ input[name="checkbox"]:checked {
 }
 .my_wer{
   width: 100%;
-  border-bottom: 1px solid #a7a7a7;
-  border-top:1px solid #a7a7a7 ;
+  border-bottom: 1px solid #d6d6dd;
+  border-top:1px solid #d6d6dd ;
   margin-top: .8rem;
   margin-bottom: .8rem;
   overflow: hidden;
@@ -956,12 +1018,14 @@ input[name="checkbox"]:checked {
   }
   .my_char{
     float: left;
-    margin-left: .2rem;
-    font-size: .7rem;
+    margin-left: .6rem;
+    font-size: .9rem;
+    line-height: 2.2rem;
     width:7rem;
     overflow: hidden;
     white-space:nowrap;
     text-overflow:ellipsis;
+
     color: #000;
 
   }
@@ -970,6 +1034,7 @@ input[name="checkbox"]:checked {
     width:3rem;
     overflow: hidden;
     display: block;
+    margin-right: .4rem;
     img{
       width: 2rem;
       height: 2rem;
@@ -992,18 +1057,25 @@ input[name="checkbox"]:checked {
 
 
 /*----------------微社区 community.html-----------------------------*/
+.timeline{margin-bottom:0.6rem; margin-top:0.5rem!important;}
 .combox{
   width: 100%;
   margin: 0 auto;
+  margin-top: .4rem;
+  background-color: #fff;
+  border-top: .4rem;
+
 
   ul{
+    .com_li{
+      padding-top: .4rem;
+      padding-bottom: .4rem;
+
+    }
     li{
       width: 100%;
-
       overflow: hidden;
-      padding-top: .6rem;
       border-top:1px solid #f2f2f1;
-      padding-bottom: .6rem;
       .com_head{
         width: 2.15rem;
         height: 2.15rem;
@@ -1020,10 +1092,10 @@ input[name="checkbox"]:checked {
       .com_char{
         margin-left: .6rem;
         float: left;
-        width: 12.4rem;
+        width: 11.5rem;
         font-family:"微软雅黑", STHeiTi, Arial, sans-serif;
         .com_name{
-          font-size: .6rem;
+          font-size: .7rem;
           line-height: .8rem;
           text-align: left;
           color: #576b95;
@@ -1034,10 +1106,25 @@ input[name="checkbox"]:checked {
         }
         .com_text{
           margin-top: .4rem;
-          height:2.5rem;
           color: #060606;
-          font-size: .6rem;
+          font-size: .7rem;
           line-height: 1rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+
+
+        }
+        .com_ul_img{
+          width: 8rem;
+          height: 8rem;
+          a{
+            display: block;
+            img{
+              width: 100%;}
+          }
 
         }
         .com_ul{
@@ -1065,7 +1152,6 @@ input[name="checkbox"]:checked {
         }
         .com_gred{
           width: 100%;
-          overflow: hidden;
           position: relative;
           height: 2rem;
           span{
@@ -1073,22 +1159,23 @@ input[name="checkbox"]:checked {
             line-height: 2rem;
             font-size: .6rem;
             color: #757575;
-            width: 5rem;
             text-align: left;
           }
-          a{
+          .icon-com{
+            font-size: .8rem;
             width: 1rem;
             height: 2rem;
             float: right;
             color: #97aad0;
             line-height: 2rem;
-            font-size: .6rem;
             text-align: right;
-
+            margin-right: -1rem;
           }
+
+
           .com_grey{
             position: absolute;
-            right:1rem;
+            right:0;
             top:.2rem;
             width: 6rem;
             border-radius: .2rem;
@@ -1099,7 +1186,7 @@ input[name="checkbox"]:checked {
             line-height: 1.5rem;
             background-color: #4c5252;
             z-index: 2;
-            a{
+            .icon-mm{
               color: #fff;
               width: 50%;
               height: 1rem;
@@ -1108,14 +1195,22 @@ input[name="checkbox"]:checked {
               text-align: center;
               border-right: 1px solid #393e42;
               margin-top: .25rem;
+              font-size: .6rem;
+
 
             }
+
+
           }
         }
         .com_praise {
           width: 100%;
           background-color: #f3f3f5;
           position: relative;
+          border-radius: 0.25rem;
+          padding: .5rem;
+          padding-top: .2rem;
+
           i:before {
             content: " ";
             border: transparent solid .5rem;
@@ -1130,16 +1225,11 @@ input[name="checkbox"]:checked {
           .com_praise_char{
             line-height: 1rem;
             width: 100%;
-            overflow: hidden;
-            white-space:nowrap;
-            text-overflow:ellipsis;
-            float: left;
-            border-bottom: 1px solid #dddee0;
             font-size: .6rem;
             margin: 0;
             padding: 0;
             color: #576b95;
-            height: 1rem;
+
           }
           .com_praise_0{
             font-size: .6rem;
@@ -1159,6 +1249,78 @@ input[name="checkbox"]:checked {
     }
   }
 }
+
+.com_praise_0:nth-child(3){border-top:1px solid #dddee0;}
+
+
+.comm_text{
+  position: fixed;
+ width: 100%;
+bottom:0;
+border-top:#bfbfbf 1px solid;
+border-bottom: #bfbfbf 1px solid;
+background-color: #f5f5f5;
+z-index: 5;
+ height: 2.3rem;
+  input{
+    line-height: 1.7rem;
+    height: 1.7rem;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    width: 12.25rem;
+    background-color: #fff;
+    font-size: .75rem;
+    border-radius: .25rem;
+   -o-border-radius: .25rem;
+     -moz-border-radius: .25rem;
+   -webkit-border-radius: .25rem;
+     box-sizing: border-box;
+    -o-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    border:1px solid #d3d3d3;
+    color:#000;
+    margin-left: .75rem;
+    padding-left: .25rem;
+
+  }
+  a{
+    margin: 0;
+    padding: 0;
+     width: 2.3rem;
+     line-height:1.7rem;
+    height: 1.7rem;
+    color: #333333;
+    text-align: center;
+    font-size: .75rem;
+    display: block;
+    float: right;
+    margin-right: .4rem;
+    border:1px solid #d3d3d3;
+    margin-top: .3rem;
+    border-radius: .25rem;
+    -o-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+   }
+
+}
+
+
+
+
+
+input[name="comm"]::-webkit-input-placeholder {color:#aaaaaa; }
+
+input[name="comm"]:-moz-placeholder {color:#aaaaaa; }
+
+
+
 /*------------------个人信息 message-personage.html---------------------------*/
 input[name="mes-per"]::-webkit-input-placeholder {color:#878787;
   text-align: right;}
@@ -1169,6 +1331,7 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
 
       li{
         color: #000;
+        height: 2.2rem;
         a{
           color: #000;
           em{
@@ -1184,6 +1347,7 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
             -moz-border-radius: .2rem;
             -webkit-border-radius: .2rem;
             text-align: center;
+            margin-right: .4rem;
           }
           img{
             width: 3.25rem;
@@ -1193,12 +1357,14 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
             -moz-border-radius: .2rem;
             -webkit-border-radius: .2rem;
             height: 3.25rem;
+            margin-right: .4rem;
+
           }
 
         }
         input{
-          font-size: .6rem;
-          width: 5rem;
+          font-size: .7rem;
+          width:6rem;
           float: right;
           display: block;
           border:none;
@@ -1206,17 +1372,27 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
           height: 1rem;
           margin-top: .55rem;
           text-align: right;
+          color: #878787;
+          margin-right: .4rem;
+
+        }
+        i{
+
+          margin-right: .4rem;
 
         }
 
       }
     .mes_head{
+      height:4rem;
       line-height: 3.25rem;
       padding-top: .4rem;
       padding-bottom: .4rem;
       color: #000;
       i{
         line-height: 3.25rem;
+        margin-right: .4rem;
+
       }
 
     }
@@ -1227,7 +1403,7 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
 }
 /*-----------------------修改密码 password.html----------------------*/
 .pass_body{
-  border-bottom: 1px solid #a7a7a7;
+  border-bottom: 1px solid #d6d6dd;
 }
 .pass_char{
   width: 95%;
@@ -1239,13 +1415,13 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
 .pass_text{
   background-color: #fff;
   width: 100%;
-  border-bottom:1px solid #a7a7a7;
+  border-bottom:1px solid #d6d6dd;
   ul{
     width: 15.5rem;
     margin-left: .5rem;
     overflow: hidden;
     li {
-      border-bottom: 1px solid #a7a7a7;
+      border-bottom: 1px solid #d6d6dd;
       line-height: 2.2rem;
       color: #444444;
       font-size: .8rem;
@@ -1257,6 +1433,7 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
         color: #000;
       }
       em{
+        min-width: 4rem;
         float: left;
         sup{
           color: #da3c3c;
@@ -1285,7 +1462,7 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
 
 /*----------------------商家优惠 favorable.htnl -----------------------*/
 .favor{
-  margin-top: .4rem;
+
 }
 .red-packet-item{
   background-color: #ffd842;
@@ -1387,7 +1564,7 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
    margin-top: .75rem;
    width: 4.7rem;
    height: 3.5rem;
-  box-shadow: 2px 0 0 rgba(255,255,255,0.3) inset;
+  box-shadow: 1px 0 0 rgba(255,255,255,0.3) inset;
    p{
      margin: 0;
      width: 3.75rem;
@@ -1404,7 +1581,7 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
   margin-top: .75rem;
   width: 4.7rem;
   height: 3.5rem;
-  box-shadow: 2px 0 0 rgba(255,255,255,0.3) inset;
+  box-shadow: 1px 0 0 rgba(255,255,255,0.3) inset;
   p{
     margin: 0;
     width: 3.75rem;
@@ -1427,10 +1604,28 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
   -webkit-border-radius: 5rem;
   background-color: #d9dadb;
   color: #fff;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   line-height: 5rem;
   transform: rotate(-45deg);
+  margin-bottom: .4rem;
+
+
+}
+.icon-frvor_r{
+  margin: 0 auto;
+  margin-top: 2.925rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  -o-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  background-color: #d9dadb;
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: center;
+  line-height: 5rem;
   margin-bottom: .4rem;
 
 
@@ -1458,7 +1653,7 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
   margin-top: 1.3rem;
   line-height: 1.6rem;
   height: 1.6rem;
-  border: 2px solid #60646f;
+  border: 1px solid #60646f;
   box-sizing: border-box;
   -o-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1516,25 +1711,54 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
   margin-top: .8rem;
 }
 /*-----------------------发布消息 issue-news.html----------------------*/
+.issuebox{
+  margin-top: .4rem;
+  background-color: #fff;
+
+}
+
+textarea::-webkit-input-placeholder {color: #aaaaaa;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;}
+
+textarea:-moz-placeholder {color: #aaaaaa;-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;}
+
 .ssue_bottom{
   margin-bottom: .8rem;
   background-color: #fff;
 }
 .issue_ul{
   width: 100%;
-  margin-top: .8rem;
-  border-top:1px solid #a7a7a7;
-  border-bottom:1px solid #a7a7a7;
+  overflow: hidden;
   padding-bottom: .8rem;
   ul{
     width: 90%;
     margin: 0 auto;
-    overflow: hidden;
     li{
       width: 21.25%;
       float: left;
       margin-right: 5%;
       margin-top: 5%;
+      position: relative;
+      .icon-issue{
+        position: absolute;
+        top:-.35rem;
+        left:-.35rem;
+        width: 1rem;
+        height: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1rem;
+        border-radius: 1rem;
+        -o-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        background-color: #da3c3c;
+        color: #fff;
+      }
     }
     .issue_a{
       a{
@@ -1551,42 +1775,23 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
   }
 }
 .issue_text{
-  position: relative;
   width: 94%;
   margin: 0 auto;
-  margin-top: .8rem;
-  border:1px solid #a7a7a7;
-  box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  border-radius: .6rem;
-  -o-border-radius: .6rem;
-  -moz-border-radius: .6rem;
-  -webkit-border-radius: .6rem;
   height: 3.9rem;
   textarea{
     width: 95%;
-    margin-top: .3rem;
+    margin-top: .6rem;
     height: 3.2rem;
     line-height: 1rem;
-    font-size: .6rem;
+    font-size: .8rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     text-align: left;
     padding-left: .5rem;
-    color: #dbdbdb;
+    color: #aaaaaa;
   }
-  span{
-    position: absolute;
-    bottom:0;
-    right: .2rem;
-    width: 2rem;
-    font-size: .6rem;
-    text-align: center;
-    color: #999999;
-  }
+
 }
 
 
@@ -1602,15 +1807,15 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
       width: 100%;
       display: block;
       background-color: #ffffff;
-      border-bottom: 1px solid #a7a7a7;
+      border-bottom: 1px solid #d8d8d9;
       text-align: center;
       color: #000;
-      font-size: .8rem;
-      line-height: 2.5rem;
+      font-size: .9rem;
+      line-height: 2.4rem;
 
     }
     .pop_border{
-      border-bottom:22px solid #d6d6dd;
+      border-bottom:13px solid #d6d6dd;
     }
   }
 }
@@ -1619,8 +1824,8 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
 .ins_box{
   width: 100%;
   margin-top: .8rem;
-  border-bottom: 1px solid #a7a7a7;
-  border-top:1px solid #a7a7a7;
+  border-bottom: 1px solid #d6d6dd;
+  border-top:1px solid #d6d6dd;
   height: 2.2rem;
   box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -1638,13 +1843,21 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
       line-height: 2.2rem;
       float: left;
       margin-left: .5rem;
+      color: #000;
     }
     i{
       float: right;
       font-size: .8rem;
       color: #c7c7cc;
       line-height: 2.2rem;
-      margin-right: .5rem;
+      margin-right: .4rem;
+    }
+    p{
+      color: #999;
+      float: right;
+      font-size: .7rem;
+      line-height: 2.2rem;
+      margin-right: .4rem;
     }
     span{
       font-size: .6rem;
@@ -1660,6 +1873,7 @@ input[name="mes-per"]:-moz-placeholder {color:#878787;text-align: right; }
       -moz-border-radius: .2rem;
       -webkit-border-radius: .2rem;
       margin-top: .7rem;
+      margin-right: .4rem;
     ;
 
     }

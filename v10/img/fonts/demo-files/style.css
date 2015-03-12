@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../icomoon.eot?mbhnac');
-	src:url('../icomoon.eot?#iefixmbhnac') format('embedded-opentype'),
-		url('../icomoon.woff?mbhnac') format('woff'),
-		url('../icomoon.ttf?mbhnac') format('truetype'),
-		url('../icomoon.svg?mbhnac#icomoon') format('svg');
+	src:url('../icomoon.eot');
+	src:url('../icomoon.eot#iefix') format('embedded-opentype'),
+		url('../icomoon.woff') format('woff'),
+		url('../icomoon.ttf') format('truetype'),
+		url('../icomoon.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -169,5 +169,69 @@
 
 .icon-iconfont-evaluate:before {
 	content: "\f624";
+}
+
+.icon-iconfont-scan:before {
+	content: "\f625";
+}
+
+.icon-11:before {
+	content: "\f626";
+}
+
+.icon-uniE602:before {
+	content: "\f627";
+}
+
+.icon-uniE600:before {
+	content: "\f628";
+}
+
+.icon-uniE604:before {
+	content: "\f629";
+}
+
+.icon-iconfont-profile:before {
+	content: "\f62a";
+}
+
+.icon-iconfont-service:before {
+	content: "\f62b";
+}
+
+.icon-iconfont-vipcard:before {
+	content: "\f62c";
+}
+
+.icon-uniE608:before {
+	content: "\f62d";
+}
+
+.icon-uniE609:before {
+	content: "\f62e";
+}
+
+.icon-uniE60A:before {
+	content: "\f62f";
+}
+
+.icon-iconfont-qrcode:before {
+	content: "\f630";
+}
+
+.icon-uniE60C:before {
+	content: "\f631";
+}
+
+.icon-uniE60D:before {
+	content: "\f632";
+}
+
+.icon-uniE60E:before {
+	content: "\f633";
+}
+
+.icon-uniE60F:before {
+	content: "\f634";
 }
 
