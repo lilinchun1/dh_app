@@ -241,13 +241,17 @@
   top: 20.4rem;
   left: 7rem;
 }
-
+.active-banner-wrap{
+  width: 16rem;
+  overflow: hidden;
+  background-color: #ffffff;
+}
 .active-banner{
   position: relative;
   margin:.4rem auto 1.5rem auto;
   width: 15rem;
   height: 8.25rem;
-  overflow: hidden;
+  //overflow: hidden;
   &:after{
     content: "";
     position: absolute;
